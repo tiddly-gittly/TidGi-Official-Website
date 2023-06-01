@@ -1,0 +1,11 @@
+created: 20230601140108146
+creator: 林一二
+modified: 20230601140130636
+modifier: 林一二
+tags: 下载
+title: 备用的Github下载页面
+type: text/vnd.tiddlywiki
+
+需要科学上网访问
+
+<a href="https://github.com/tiddly-gittly/TidGi-Desktop/releases/latest"><img src="https://img.shields.io/github/downloads/tiddly-gittly/TidGi-Desktop/latest/total?label=Download%20Latest%20Release&style=for-the-badge" alt="最新版下载按钮"></a>

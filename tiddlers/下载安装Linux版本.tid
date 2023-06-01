@@ -1,11 +1,12 @@
 created: 20230601080626602
 creator: 林一二
-modified: 20230601100254359
-modifier: 马不前
-tags: 下载
+modified: 20230601135426906
+modifier: 林一二
+tags: 下载 DownloadLinks
 title: 下载安装Linux版本
 type: text/vnd.tiddlywiki
 
+@@.installer-download-links-container
 !!! DEB
 
 [ext[x86芯片64位.deb|./files/tidgi_latest_amd64.deb]] [ext[64位Arm芯片.rpm|./files/tidgi_latest_arm64.deb]]
@@ -19,3 +20,4 @@ type: text/vnd.tiddlywiki
 ```bash
 yay tidgi
 ```
+@@

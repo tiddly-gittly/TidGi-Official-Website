@@ -1,8 +1,8 @@
 created: 20230601041800842
 creator: 马不前
-list: 下载安装Windows版本 下载安装MacOS版本 下载安装Linux版本
-modified: 20230601100310088
-modifier: 马不前
+list: 下载安装Windows版本 下载安装MacOS版本 下载安装Linux版本 其它应用商店 备用的Github下载页面
+modified: 20230601140145725
+modifier: 林一二
 tags: zh-Hans
 title: 下载
 type: text/vnd.tiddlywiki
@@ -14,11 +14,3 @@ type: text/vnd.tiddlywiki
  {{!!text}}
 
 </$list>
-
-!! 备用的Github下载页面
-
-需要科学上网访问
-
-[[最新版下载按钮|https://github.com/tiddly-gittly/TidGi-Desktop/releases/latest]]：↓
-
-<a href="https://github.com/tiddly-gittly/TidGi-Desktop/releases/latest"><img src="https://img.shields.io/github/downloads/tiddly-gittly/TidGi-Desktop/latest/total?label=Download%20Latest%20Release&style=for-the-badge" alt="Packaging status"></a>

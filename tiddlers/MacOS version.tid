@@ -1,15 +1,16 @@
 created: 20230601115432707
 creator: 马不前
-modified: 20230601115519311
-modifier: 马不前
-tags: download
+modified: 20230601135643384
+modifier: 林一二
+tags: download DownloadLinks
 title: MacOS version
 type: text/vnd.tiddlywiki
 
-[ext[for Intel (x64) chips.zip|. /files/TidGi-darwin-x64-latest.zip]] [ext[for new M1 / M2 chips.zip|. /files/TidGi-darwin-arm64-latest.zip]]
+@@.installer-download-links-container
+[ext[for Intel (x64) chips.zip|./files/TidGi-darwin-x64-latest.zip]] [ext[for new M1 / M2 chips.zip|. /files/TidGi-darwin-arm64-latest.zip]]
+@@
 
 After extracting the downloaded zip, remember to drag it into the "Applications" folder before using it.
-
 
 !!! Mac command line user
 

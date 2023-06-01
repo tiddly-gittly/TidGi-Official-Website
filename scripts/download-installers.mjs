@@ -5,8 +5,12 @@ import { Readable } from 'stream';
 import { finished } from 'stream/promises';
 import { backOff } from 'exponential-backoff';
 
-$.env.HTTP_PROXY = 'http://localhost:1080';
-$.env.HTTPS_PROXY = 'http://localhost:1080';
+/* 
+set HTTP_PROXY =http://localhost:1080
+set HTTPS_PROXY=http://localhost:1080
+*/
+$.env.HTTP_PROXY = 'http://127.0.0.1:1080';
+$.env.HTTPS_PROXY = 'http://127.0.0.1:1080';
 
 const latestReleaseData = await fetch('https://api.github.com/repos/tiddly-gittly/TidGi-Desktop/releases/latest').then(
   async (response) => await response.json(),

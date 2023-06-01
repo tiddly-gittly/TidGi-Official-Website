@@ -1,0 +1,22 @@
+.installer-download-links-container a {
+	user-select: none;
+	transition: background 20ms ease-in 0s;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	white-space: nowrap;
+	height: 36px;
+	border-radius: 4px;
+	color: rgb(17, 17, 17);
+	font-size: 14px;
+	line-height: 1;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-weight: 500;
+	background: rgba(55, 53, 47, 0.08);
+	border: 1px solid rgba(15, 15, 15, 0.15);
+	width: 100%;
+	box-shadow: rgba(15, 15, 15, 0.05) 0px 1px 2px;
+	margin-bottom: 4px;
+}

@@ -1,0 +1,11 @@
+created: 20230601135946133
+creator: 林一二
+modified: 20230601140010440
+modifier: 林一二
+tags: download
+title: ApplicationStoreStatus
+type: text/vnd.tiddlywiki
+
+<a href="https://repology.org/project/tidgi/versions">
+  <img src="https://repology.org/badge/vertical-allrepos/tidgi.svg" alt="Packaging status">
+</a>

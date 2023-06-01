@@ -1,21 +1,23 @@
 created: 20230601115604116
 creator: 马不前
-modified: 20230601115622012
-modifier: 马不前
-tags: download
+modified: 20230601135932854
+modifier: 林一二
+tags: download DownloadLinks
 title: Linux version
 type: text/vnd.tiddlywiki
 
+@@.installer-download-links-container
 !!! DEB
 
-[ext[x86chip64bit.deb|. /files/tidgi_latest_amd64.deb]] [ext[64bitArmchip.rpm|. /files/tidgi_latest_arm64.deb]]
+[ext[x86 64bit.deb|./files/tidgi_latest_amd64.deb]] [ext[64bit Arm.rpm|./files/tidgi_latest_arm64.deb]]
 
 !!! RPM
 
-[ext[x86chip64bit.rpm|. /files/TidGi-latest-1.x86_64.rpm]] [ext[64bitArmchip.rpm|. /files/TidGi-latest-1.arm64.rpm]]
+[ext[x86 64bit.rpm|./files/TidGi-latest-1.x86_64.rpm]] [ext[64bit Arm.rpm|./files/TidGi-latest-1.arm64.rpm]]
 
 !!! ArchLinux
 
 ```bash
 yay tidgi
 ```
+@@

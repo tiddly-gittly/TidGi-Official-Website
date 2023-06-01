@@ -1,15 +1,16 @@
 created: 20230601075207351
 creator: 林一二
-modified: 20230601080801723
+modified: 20230601135406271
 modifier: 林一二
-tags: 下载
+tags: 下载 DownloadLinks
 title: 下载安装MacOS版本
 type: text/vnd.tiddlywiki
 
+@@.installer-download-links-container
 [ext[适用于 Intel (x64) 芯片.zip|./files/TidGi-darwin-x64-latest.zip]] [ext[适用于新款 M1 / M2 芯片.zip|./files/TidGi-darwin-arm64-latest.zip]]
+@@
 
 下载的 zip 解压后，记得拖入「应用程序」文件夹后再使用。
-
 
 !!! Mac 命令行用户
 

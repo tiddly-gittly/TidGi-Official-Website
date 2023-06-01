@@ -1,8 +1,16 @@
 created: 20230601014532026
 creator: 马不前
-list: TidGi showcases-and-demo [[Draft of 'en-readme' by 马不前]] en-readme
-modified: 20230601100659376
+list: TidGi showcases-and-demo about-tidgi-desktop related-posts-about-tidgi download mobile-app data-privacy-protection differences why-github development
+modified: 20230601114708553
 modifier: 马不前
 tags: Languages
 title: en-GB
 type: text/vnd.tiddlywiki
+
+<$list filter="[tag<currentTiddler>]">
+
+!!! <$link><<currentTiddler>></$link>
+
+ {{!!text}}
+
+</$list>

@@ -1,0 +1,24 @@
+created: 20230601113617598
+creator: 马不前
+list: [[Windows version]] [[MacOS version]] [[Linux version]]
+modified: 20230601115802272
+modifier: 马不前
+tags: en-GB
+title: download
+type: text/vnd.tiddlywiki
+
+<a href="https://repology.org/project/tidgi/versions">
+  <img src="https://repology.org/badge/vertical-allrepos/tidgi.svg" alt="Packaging status">
+</a>
+
+[[Latest Downloads|https://github.com/tiddly-gittly/TidGi-Desktop/releases/latest]]
+
+<a href="https://github.com/tiddly-gittly/TidGi-Desktop/releases/latest"><img src="https://img.shields.io/github/downloads/tiddly-gittly/TidGi-Desktop/latest/total?label=Download%20Latest%20Release&style=for-the-badge" alt="Packaging status"></a>
+
+<$list filter="[tag<currentTiddler>]">
+
+!!! <$link><<currentTiddler>></$link>
+
+ {{!!text}}
+
+</$list>

@@ -1,10 +1,18 @@
 created: 20230104152413814
 creator: 林一二
-modified: 20230224120013977
+modified: 20230601054424250
 modifier: 林一二
 title: Index
 type: text/vnd.tiddlywiki
 
-Click {{$:/core/images/edit-button}} button on top-right of this card to start edit.
+<$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
 
-Visit [[教程 (Chinese)|https://tw-cn.netlify.app/]] or [[Official Site (English)|https://tiddlywiki.com/]] to learn.
+	<$list filter="[<lang>search[zh]]">
+		{{zh-Hans}}
+	</$list>
+
+	<$list filter="[<lang>!search[zh]]">
+		{{en-GB}}
+	</$list>
+
+</$list>

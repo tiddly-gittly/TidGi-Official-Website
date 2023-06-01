@@ -1,9 +1,29 @@
 created: 20230522163555567
 creator: 林一二
-modified: 20230601030456742
-modifier: 马不前
+modified: 20230601143117924
+modifier: 林一二
 tags: 产品截图及试用
 title: 截图
 type: text/vnd.tiddlywiki
 
 [img[main-window-hide-bar.png]]
+
+<details>
+<summary>更多截图 ◀</summary>
+
+| 加载 NodeJS 版维基 |
+|[img[main-window.png]]|
+
+| 新建本地维基 | 下载云端维基 |
+|[img[add-workspace.png]]|[img[clone-workspace.png]]|
+
+| 多语言翻译和设置界面 |
+|[img[preference.png]]|
+
+| 交互式代码执行 |
+|[img[Interactive code execution.gif]]|
+
+| 社区插件源 |
+|[img[community-plugin-library.png]]|
+
+</details>

@@ -1,19 +1,23 @@
 created: 20230601114729750
 creator: 马不前
-modified: 20230601145226590
-modifier: 林一二
+modified: 20230601162627452
+modifier: 马不前
 tags: en-GB FrontPage
 title: Credits
 type: text/vnd.tiddlywiki
 
-The desktop app shell is based on [[https://github.com/atomery/singlebox|atomery/singlebox]] and [[atomery/webcatalog|https://github.com/atomery/webcatalog]], they provide lots of utils around website-generated-app, much powerful than generating app from website simply using Chrome. Also the independent developer @quanglam2807 behind these great tools helps me a lot when I develop TidGi.
-
+<p>
+The desktop app shell is based on [[atomery/singlebox|https://github.com/atomery/singlebox]] and [[atomery/webcatalog|https://github.com/atomery/webcatalog]], they provide lots of utils around website-generated-app, much powerful than generating app from website simply using Chrome. Also the independent developer @quanglam2807 behind these great tools helps me a lot when I develop TidGi.
+</p>
+<p>
 Current Icon is download from [[iconsdb|https://www.iconsdb.com/custom-color/github-11-icon.html]] under Creative Commons Attribution-NoDerivs 3.0 , if you are a designer, please feel free to contribute your ICON if you have a better idea.
-
-!!! Stargazers over time
-
+</p>
+<p>
+Stargazers over time
+</p>
+<p>
 Please give a star if you like it!
-
+</p>
 <a href="https://starchart.cc/tiddly-gittly/TidGi-Desktop">
 <$image source="https://starchart.cc/tiddly-gittly/TidGi-Desktop.svg" />
 </a>

@@ -1,0 +1,13 @@
+created: 20230601042316725
+creator: 马不前
+modified: 20230601042432508
+modifier: 马不前
+tags: zh-CN
+title: 数据隐私保护
+type: text/vnd.tiddlywiki
+
+你可以选择你的 WIKI 工作区的存储服务提供商：
+
+# 「Github」是一个无限存储空间、可以用 GH-Pages 部署博客的平台。
+# 「本地」模式会创建一个本地仓库来备份你的 WIKI，你可以用 [[GithubDesktop|https://github.com/desktop/desktop]]来手动同步内容到云端。
+# 「Gitlab」和「码云」还待支持，不过架子已经搭好了。

@@ -1,0 +1,19 @@
+created: 20230601043036809
+creator: 马不前
+modified: 20230601043326760
+modifier: 马不前
+tags: zh-CN
+title: 鸣谢
+type: text/vnd.tiddlywiki
+
+The desktop app shell is based on [[atomery/singlebox|https://github.com/atomery/singlebox]] and [[atomery/webcatalog|https://github.com/atomery/webcatalog]], they provide lots of utils around website-generated-app, much powerful than generating app from website simply using Chrome. Also the independent developer @quanglam2807 behind these great tools helps me a lot when I develop TidGi.
+
+Current Icon is download from [[iconsdb|https://www.iconsdb.com/custom-color/github-11-icon.html]] under Creative Commons Attribution-NoDerivs 3.0 , if you are a designer, please feel free to contribute your ICON if you have a better idea.
+
+!!! 点个星星 ⭐️ 吧
+
+Please give a star if you like it!
+
+<a href="https://starchart.cc/tiddly-gittly/TidGi-Desktop">
+<$image source="https://starchart.cc/tiddly-gittly/TidGi-Desktop.svg" />
+</a>

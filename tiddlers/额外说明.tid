@@ -1,0 +1,46 @@
+created: 20230601025933991
+creator: 马不前
+modified: 20230601033547528
+modifier: 马不前
+tags: 产品截图及试用
+title: 额外说明
+type: text/vnd.tiddlywiki
+
+<details>
+
+| 加载 NodeJS 版维基 |
+|[img[main-window.png]]|
+
+| 新建本地维基 | 下载云端维基 |
+|[img[add-workspace.png]]|[img[clone-workspace.png]]|
+
+|  多语言翻译和设置界面 |
+|[img[preference.png]]|
+
+| 交互式代码执行 |
+|[img[Interactive code execution.gif]]|
+
+| 社区插件源 |
+|[img[community-plugin-library.png]]|
+
+</details>
+
+<details>
+<summary>Mac 使用者点击这里展开操作方法，我费劲办法也申请不到苹果开发者账号，所以你得手动信任这个应用 ◀</summary>
+首先你得把应用拖入「应用程序」文件夹才能使用！不然会弹一个报错框。点击「取消」 ↓
+<br/>
+[img[Click-to-cancel.png]]
+<br/>
+[img[system-preferences.png]]
+<br/>
+[img[open-anyway.png]]
+<br/>
+点击「打开」 ↓
+
+[img[click-to-open.png]]
+
+点击「允许」 ↓
+
+[img[click-to-ok.png]]
+
+</details>

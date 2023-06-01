@@ -1,7 +1,16 @@
 created: 20230522160551431
 creator: 林一二
-modified: 20230522160558918
-modifier: 林一二
+list: 太记 产品截图及试用 相关介绍 太记-桌面版 下载 移动端应用 数据隐私保护 与竞品的差异 [[为什么使用 Github 存储]]
+modified: 20230601042924592
+modifier: 马不前
 tags: Languages
 title: zh-CN
 type: text/vnd.tiddlywiki
+
+<$list filter="[tag<currentTiddler>]">
+
+!!! <$link><<currentTiddler>></$link>
+
+ {{!!text}}
+
+</$list>

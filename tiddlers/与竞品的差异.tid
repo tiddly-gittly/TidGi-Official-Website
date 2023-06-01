@@ -1,0 +1,14 @@
+created: 20230601042459250
+creator: 马不前
+modified: 20230601042701005
+modifier: 马不前
+tags: zh-CN
+title: 与竞品的差异
+type: text/vnd.tiddlywiki
+
+''与 [[TiddlyDesktop|https://github.com/Jermolene/TiddlyDesktop]] 的差别？''
+
+# 太微的 NodeJS 版本有无缝的自动保存体验，这是利用 SyncAdaptor 技术（而不是 Saver ）带来的的优势，太记对 NodeJS wiki 有更好的支持，而 TD 主要支持 HTML 版单文件 WIKI，各有优势。
+# 使用 NodeJS wiki 时，我们可以有分离的tiddler文件，这些文件可以手工修改，也可以由其他程序修改（例如装了[[VSCode-TW5-Syntax|https://github.com/joshuafontany/VSCode-TW5-Syntax]]的 VSCode)，而且方便细粒度备份回滚
+# 尽管 TiddlyDesktop 也可以加载由 nodejs 版太微生成的 wiki 文件夹，但太记还可以轻松地将该文件夹自动备份到 Github 上。
+# 通过使用 Electron 技术，我们可以在太微中使用 `fs` 、 `git` 和许多其他 nodejs 的扩展接口，这大大扩展了插件可使用的能力。这种可扩展性也是我选择太微作为我日常知识管理工具的原因，太记进一步强化了它。

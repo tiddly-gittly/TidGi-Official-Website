@@ -1,0 +1,29 @@
+created: 20230601041800842
+creator: 马不前
+modified: 20230601042151656
+modifier: 马不前
+tags: zh-CN
+title: 下载
+type: text/vnd.tiddlywiki
+
+<a href="https://repology.org/project/tidgi/versions">
+  <img src="https://repology.org/badge/vertical-allrepos/tidgi.svg" alt="Packaging status">
+</a>
+
+> Win 和 Mac 的普通用户直接下载 App
+
+[[最新版下载按钮|https://github.com/tiddly-gittly/TidGi-Desktop/releases/latest]]
+
+<a href="https://github.com/tiddly-gittly/TidGi-Desktop/releases/latest"><img src="https://img.shields.io/github/downloads/tiddly-gittly/TidGi-Desktop/latest/total?label=Download%20Latest%20Release&style=for-the-badge" alt="Packaging status"></a>
+
+> For arch user
+
+```bash
+yay tidgi
+```
+
+> Mac 命令行用户
+
+```bash
+brew install TidGi # Not tested
+```

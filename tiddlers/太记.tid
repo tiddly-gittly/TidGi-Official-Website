@@ -1,9 +1,20 @@
 created: 20230522160614265
 creator: 林一二
-modified: 20230522160651039
-modifier: 林一二
+modified: 20230601041055148
+modifier: 马不前
 tags: zh-CN
 title: 太记
 type: text/vnd.tiddlywiki
 
-可定制性极强的个人知识管理系统，基于 Tiddlywiki，使用 Git 作为备份管理器和博客平台。
+<div align="center">
+<h1> 太记 </h1>
+<p>可定制性极强的个人知识管理系统，使用 Git 作为备份管理器和博客平台</p>
+[img[https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg]]
+<a href="https://github.com/tiddly-gittly/TidGi-Desktop/actions">
+<$image source="https://github.com/tiddly-gittly/TidGi-Desktop/actions/workflows/release.yml/badge.svg" />
+</a>
+<a href="https://github.com/linonetwo">
+<$image source="https://img.shields.io/github/followers/linonetwo" />
+</a>
+
+</div>

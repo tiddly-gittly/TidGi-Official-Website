@@ -45,4 +45,4 @@ async function downloadAsset(asset) {
 }
 
 await mkdir(path.join(__dirname, '../files'), { recursive: true });
-await Promise.all([latestReleaseData.assets[0]].map((asset) => backOff(() => downloadAsset(asset))));
+await Promise.all(latestReleaseData.assets.map((asset) => backOff(() => downloadAsset(asset))));

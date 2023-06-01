@@ -1,0 +1,17 @@
+created: 20230601075724197
+creator: 林一二
+modified: 20230601080751589
+modifier: 林一二
+tags: 下载
+title: 下载安装Windows版本
+type: text/vnd.tiddlywiki
+
+[ext[64位自动安装.exe|./files/Install-TidGi-Windows-x64.exe]] （推荐，方便更新）
+
+[ext[64位自选安装目录|./files/Install-TidGi-Windows-x64.msi]] （可选安装目录，每次更新都要手动重新选，容易忘）
+
+!!! 其他安装器
+
+[ext[64位Arm架构自动安装.exe|./files/Install-TidGi-Windows-arm64.exe]] [ext[64位Arm架构自选安装目录|./files/Install-TidGi-Windows-arm64.msi]]
+
+[ext[32位自动安装.exe|./files/Install-TidGi-Windows-ia32.exe]] [ext[32位自选安装目录|./files/Install-TidGi-Windows-ia32.msi]]

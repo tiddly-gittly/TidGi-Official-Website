@@ -1,0 +1,17 @@
+created: 20230601115302536
+creator: 马不前
+modified: 20230601115529235
+modifier: 马不前
+tags: download
+title: Windows version
+type: text/vnd.tiddlywiki
+
+[ext[64-bit auto-install.exe|. /files/Install-TidGi-Windows-x64.exe]] (recommended for easy updates)
+
+[ext[64-bit self-selected installation directory|. /files/Install-TidGi-Windows-x64.msi]] (optional installation directory, each update has to be manually re-elected, easy to forget)
+
+!!! Other installers
+
+[ext[64bitArmArchitectureAutomaticInstall.exe|. /files/Install-TidGi-Windows-arm64.exe]] [ext[64-bit Arm architecture self-selectable installation directory|. /files/Install-TidGi-Windows-arm64.msi]]
+
+[ext[32-bit auto-install.exe|. /files/Install-TidGi-Windows-ia32.exe]] [ext[32-bit self-selected installation directory|. /files/Install-TidGi-Windows-ia32.msi]]

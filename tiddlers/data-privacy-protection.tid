@@ -1,0 +1,13 @@
+created: 20230601114409762
+creator: 马不前
+modified: 20230601114443018
+modifier: 马不前
+tags: en-GB
+title: data-privacy-protection
+type: text/vnd.tiddlywiki
+
+You can choose storage provider for your wiki workspace:
+
+# "Github" as unlimited storage and gh-pages blogging platform.
+# "Local" will create a local git repo for you, you can use [[GithubDesktop|https://github.com/desktop/desktop]] to sync manually.
+# "Gitlab" and "Gitee" is on the way.

@@ -1,0 +1,59 @@
+created: 20230601140518788
+creator: 林一二
+modified: 20230601142811845
+modifier: 林一二
+tags: tiddlywiki $:/tags/Stylesheet
+title: DefaultLinkStyles
+type: text/vnd.tiddlywiki
+
+\import [[$:/themes/tiddlywiki/vanilla/base]]
+
+/* https://github.com/tiddly-gittly/itonnote-theme/blob/master/src/base.tid */
+a.tc-tiddlylink, a.tc-tiddlylink:hover {
+  padding: 2px;
+  padding-bottom: 0;
+  white-space: normal;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  line-height: 1.3;
+  color: <<colour foreground>>;
+  border-bottom: <<colour tiddler-link-underline>>;
+  text-decoration: none;
+  /** hover动画 */
+  transition: background 120ms ease-in 0s;
+}
+
+
+a.tc-tiddlylink:hover {
+  background-color: <<colour page-background>>;
+  color: <<colour foreground>>;
+}
+
+
+a.tc-tiddlylink-external, a.tc-tiddlylink-external:visited {
+	padding: 2px;
+  padding-bottom: 0px;
+	border-bottom: <<colour external-link-underline>>;
+	text-decoration: none;
+  box-decoration-break: clone;
+  font-weight: bold;
+  color: <<colour foreground>>;
+}
+
+
+a.tc-tiddlylink-external:hover {
+  background-color: <<colour page-background>>;
+  background-image: linear-gradient(19deg, #333 0%, #CCC 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/** 预览状态标签下拉列表里的链接 */
+.tc-drop-down a.tc-tiddlylink:hover {
+  background-color: <<colour page-background>>;
+  color: <<colour foreground>>;
+}

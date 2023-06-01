@@ -1,8 +1,8 @@
 created: 20230601115432707
 creator: 马不前
-modified: 20230601135643384
+modified: 20230601143441002
 modifier: 林一二
-tags: download DownloadLinks
+tags: Download DownloadLinks
 title: MacOS version
 type: text/vnd.tiddlywiki
 
@@ -12,7 +12,34 @@ type: text/vnd.tiddlywiki
 
 After extracting the downloaded zip, remember to drag it into the "Applications" folder before using it.
 
-!!! Mac command line user
+
+<details>
+<summary>For mac users, you have to manually trust this app, click here to expand details.◀</summary>
+
+Since I haven't buy Apple developer key yet, so you have to entrust App to open it.
+
+First of all, you need to drag this App into Applications folder! Otherwise there will be an error.
+
+Click "Cancel" ↓
+<br/>
+[img[Click-to-cancel.png]]
+<br/>
+[img[system-preferences.png]]
+<br/>
+[img[open-anyway.png]]
+<br/>
+
+Click "Open" ↓
+
+[img[click-to-open.png]]
+
+Click "OK" ↓
+
+[img[click-to-ok.png]]
+
+</details>
+
+!!!! Mac command line user
 
 ```bash
 brew install TidGi # Not tested

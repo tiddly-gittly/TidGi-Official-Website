@@ -1,16 +1,16 @@
 created: 20230601044122266
 creator: 马不前
 list: demo Screenshot details
-modified: 20230601121115763
-modifier: 马不前
-tags: en-GB
-title: showcases-and-demo
+modified: 20230601145118851
+modifier: 林一二
+tags: en-GB FrontPage
+title: Showcases and Demo
 type: text/vnd.tiddlywiki
 
 <$list filter="[tag<currentTiddler>]">
 
-!!! <$link><<currentTiddler>></$link>
+  !!! <<currentTiddler>>
 
- {{!!text}}
+  {{!!text}}
 
 </$list>

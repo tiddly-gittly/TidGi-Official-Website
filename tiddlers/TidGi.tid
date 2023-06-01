@@ -1,13 +1,12 @@
 created: 20230601044031047
 creator: 马不前
-modified: 20230601053430408
+modified: 20230601145402439
 modifier: 林一二
-tags: en-GB
+tags: en-GB FrontPage
 title: TidGi
 type: text/vnd.tiddlywiki
 
 <div align="center">
-<h1> TidGi </h1>
 <p> Customizable personal knowledge-base with git as backup manager and blogging platform. </p>
 [img[https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg]]
 <a href="https://github.com/tiddly-gittly/TidGi-Desktop/actions">
@@ -20,10 +19,6 @@ type: text/vnd.tiddlywiki
 
 <div align="center">
 
-<a href="https://github.com/tiddly-gittly/TidGi-Desktop/releases/latest">
-<$image source="https://img.shields.io/github/downloads/tiddly-gittly/TidGi-Desktop/latest/total?label=Download%20Latest%20Release&style=for-the-badge" />
-</a>
-
-More: [[Download|download]]
+[[Download]]
 
 </div>

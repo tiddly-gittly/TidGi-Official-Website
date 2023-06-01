@@ -1,0 +1,29 @@
+created: 20230601044031047
+creator: 马不前
+modified: 20230601044509506
+modifier: 马不前
+tags: en
+title: TidGi
+type: text/vnd.tiddlywiki
+
+<div align="center">
+<h1> TidGi </h1>
+<p> Customizable personal knowledge-base with git as backup manager and blogging platform. </p>
+[img[https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg]]
+<a href="https://github.com/tiddly-gittly/TidGi-Desktop/actions">
+<$image source="https://github.com/tiddly-gittly/TidGi-Desktop/actions/workflows/release.yml/badge.svg" />
+</a>
+<a href="https://github.com/linonetwo">
+<$image source="https://img.shields.io/github/followers/linonetwo" />
+</a>
+</div>
+
+<div align="center">
+
+<a href="https://github.com/tiddly-gittly/TidGi-Desktop/releases/latest">
+<$image source="https://img.shields.io/github/downloads/tiddly-gittly/TidGi-Desktop/latest/total?label=Download%20Latest%20Release&style=for-the-badge" />
+</a>
+
+More: [[Download|download]]
+
+</div>

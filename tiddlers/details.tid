@@ -1,0 +1,51 @@
+created: 20230601044941510
+creator: 马不前
+modified: 20230601045630752
+modifier: 马不前
+tags: showcases-and-demo
+title: details
+type: text/vnd.tiddlywiki
+
+<details>
+
+| Load NodeJS Wiki |
+|[img[main-window.png]]|
+
+
+| Create Local Wiki | Clone Online Wiki |
+|[img[add-workspace.png]]|[img[clone-workspace.png]]|
+
+| Translation, Preferences |
+|[img[preference.png]]|
+
+| Interactive code |
+|[img[Interactive code execution.gif]]|
+
+| Community Plugin Library |
+|[img[community-plugin-library.png]]|
+
+</details>
+
+<details>
+<summary>For mac users, since I haven't buy Apple developer key yet, so you have to entrust App to open it, click here to expand details.◀</summary>
+
+First of all, you need to drag this App into Applications folder! Otherwise there will be an error.
+
+Click "Cancel" ↓
+<br/>
+[img[Click-to-cancel.png]]
+<br/>
+[img[system-preferences.png]]
+<br/>
+[img[open-anyway.png]]
+<br/>
+
+Click "Open" ↓
+
+[img[click-to-open.png]]
+
+Click "OK" ↓
+
+[img[click-to-ok.png]]
+
+</details>

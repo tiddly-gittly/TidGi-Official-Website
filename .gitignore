@@ -14,3 +14,4 @@ tiddlers/$__layout.json.meta
 tiddlers/$__layout.tid
 
 files/
+.env

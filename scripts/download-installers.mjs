@@ -37,7 +37,7 @@ async function downloadAsset(asset) {
   if (GITHUB_TOKEN) {
     headers.Authorization = `token ${GITHUB_TOKEN}`;
   }
-  const { body } = await fetch(asset.browser_download_url, { headers });
+  const { body } = await fetch(asset.url, { headers });
   const destination = path.join(__dirname, `../files/${fileName}`);
   const fileStream = fs.createWriteStream(destination, { flags: 'wx' });
   await finished(body.pipe(fileStream));

@@ -1,0 +1,21 @@
+created: 20230601080626602
+creator: 林一二
+modified: 20230601081547495
+modifier: 林一二
+tags: zh-Hans
+title: 下载安装Linux版本
+type: text/vnd.tiddlywiki
+
+!!! DEB
+
+[ext[x86芯片64位.deb|./files/tidgi_latest_amd64.deb]] [ext[64位Arm芯片.rpm|./files/tidgi_latest_arm64.deb]]
+
+!!! RPM
+
+[ext[x86芯片64位.rpm|./files/TidGi-latest-1.x86_64.rpm]] [ext[64位Arm芯片.rpm|./files/TidGi-latest-1.arm64.rpm]]
+
+!!! ArchLinux
+
+```bash
+yay tidgi
+```

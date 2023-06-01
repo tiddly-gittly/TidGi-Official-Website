@@ -1,18 +1,18 @@
 created: 20230601043036809
 creator: 马不前
-modified: 20230601053342787
+modified: 20230601145048948
 modifier: 林一二
-tags: zh-Hans
+tags: zh-Hans FrontPage
 title: 鸣谢
 type: text/vnd.tiddlywiki
 
-The desktop app shell is based on [[atomery/singlebox|https://github.com/atomery/singlebox]] and [[atomery/webcatalog|https://github.com/atomery/webcatalog]], they provide lots of utils around website-generated-app, much powerful than generating app from website simply using Chrome. Also the independent developer @quanglam2807 behind these great tools helps me a lot when I develop TidGi.
+这个桌面应用程序一开始仅仅是一个基于[[atomery/singlebox|https://github.com/atomery/singlebox]]和[[atomery/webcatalog|https://github.com/atomery/webcatalog]]开发的 NodeJS 版太微的启动器。这两个可以从任意网站生成桌面App的应用程序提供了很多工具，比单纯使用Chrome从网站生成的PWA应用程序强大得多。另外，在我开发TidGi时，这些伟大的工具背后的独立开发者 @quanglam2807 对我帮助很大。
 
-Current Icon is download from [[iconsdb|https://www.iconsdb.com/custom-color/github-11-icon.html]] under Creative Commons Attribution-NoDerivs 3.0 , if you are a designer, please feel free to contribute your ICON if you have a better idea.
+目前的图标是从[[iconsdb|https://www.iconsdb.com/custom-color/github-11-icon.html]]下载的，属于 Creative Commons Attribution-NoDerivs 3.0 ，如果你是一个设计师，且有更好的想法，请随时贡献你的图标。
 
 !!! 点个星星 ⭐️ 吧
 
-Please give a star if you like it!
+如果你喜欢它，请给一颗星!
 
 <a href="https://starchart.cc/tiddly-gittly/TidGi-Desktop">
 <$image source="https://starchart.cc/tiddly-gittly/TidGi-Desktop.svg" />

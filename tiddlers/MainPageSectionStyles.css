@@ -1,3 +1,6 @@
 section.main-page-section {
 	padding-bottom: 5em;
 }
+section.main-page-section h2 {
+	text-align: center;
+}

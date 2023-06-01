@@ -1,20 +1,24 @@
 created: 20230522160614265
 creator: 林一二
-modified: 20230601053342788
+modified: 20230601145429665
 modifier: 林一二
-tags: zh-Hans
+tags: zh-Hans FrontPage
 title: 太记
 type: text/vnd.tiddlywiki
 
 <div align="center">
-<h1> 太记 </h1>
-<p>可定制性极强的个人知识管理系统，使用 Git 作为备份管理器和博客平台</p>
-[img[https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg]]
-<a href="https://github.com/tiddly-gittly/TidGi-Desktop/actions">
-<$image source="https://github.com/tiddly-gittly/TidGi-Desktop/actions/workflows/release.yml/badge.svg" />
-</a>
-<a href="https://github.com/linonetwo">
-<$image source="https://img.shields.io/github/followers/linonetwo" />
-</a>
+	<p>可定制性极强的个人知识管理系统，使用 Git 作为备份管理器和博客平台</p>
+	[img[https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg]]
+	<a href="https://github.com/tiddly-gittly/TidGi-Desktop/actions">
+		<$image source="https://github.com/tiddly-gittly/TidGi-Desktop/actions/workflows/release.yml/badge.svg" />
+	</a>
+	<a href="https://github.com/linonetwo">
+		<$image source="https://img.shields.io/github/followers/linonetwo" />
+	</a>
+</div>
+
+<div align="center">
+
+[[下载]]
 
 </div>

@@ -1,9 +1,30 @@
 created: 20230601044800771
 creator: 马不前
-modified: 20230601044819935
-modifier: 马不前
-tags: showcases-and-demo
+modified: 20230601144133312
+modifier: 林一二
+tags: [[Showcases and Demo]]
 title: Screenshot
 type: text/vnd.tiddlywiki
 
 [img[main-window-hide-bar.png]]
+
+<details>
+<summary>More Screenshots ◀</summary>
+
+| Load NodeJS Wiki |
+|[img[main-window.png]]|
+
+
+| Create Local Wiki | Clone Online Wiki |
+|[img[add-workspace.png]]|[img[clone-workspace.png]]|
+
+| Translation, Preferences |
+|[img[preference.png]]|
+
+| Interactive code |
+|[img[Interactive code execution.gif]]|
+
+| Community Plugin Library |
+|[img[community-plugin-library.png]]|
+
+</details>

@@ -1,12 +1,12 @@
 created: 20230601114645745
 creator: 马不前
-modified: 20230601120840396
-modifier: 马不前
+modified: 20230601144613015
+modifier: 林一二
 tags: en-GB
-title: development
+title: Development
 type: text/vnd.tiddlywiki
 
-! Development guide
+!! Development guide
 
 Development plan of TidGi-Desktop is listed in these [[Kanban|https://github.com/tiddly-gittly/TidGi-Desktop/projects]].
 

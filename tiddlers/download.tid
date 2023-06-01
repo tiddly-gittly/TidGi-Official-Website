@@ -1,10 +1,10 @@
 created: 20230601113617598
 creator: 马不前
 list: [[Windows version]] [[MacOS version]] [[Linux version]] ApplicationStoreStatus
-modified: 20230601140205001
+modified: 20230601145145143
 modifier: 林一二
-tags: en-GB
-title: download
+tags: en-GB FrontPage
+title: Download
 type: text/vnd.tiddlywiki
 
 <a href="https://github.com/tiddly-gittly/TidGi-Desktop/releases/latest"><img src="https://img.shields.io/github/downloads/tiddly-gittly/TidGi-Desktop/latest/total?label=Download%20Latest%20Release&style=for-the-badge" alt="Packaging status"></a>

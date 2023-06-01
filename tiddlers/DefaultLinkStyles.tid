@@ -1,6 +1,6 @@
 created: 20230601140518788
 creator: 林一二
-modified: 20230601142811845
+modified: 20230601145516702
 modifier: 林一二
 tags: tiddlywiki $:/tags/Stylesheet
 title: DefaultLinkStyles
@@ -27,7 +27,6 @@ a.tc-tiddlylink, a.tc-tiddlylink:hover {
 
 
 a.tc-tiddlylink:hover {
-  background-color: <<colour page-background>>;
   color: <<colour foreground>>;
 }
 

@@ -1,23 +1,14 @@
 created: 20230601114601412
 creator: 马不前
-modified: 20230601162507174
+modified: 20230602002625168
 modifier: 马不前
 tags: en-GB FrontPage
 title: Why Github as storage
 type: text/vnd.tiddlywiki
 
-<p>
 Because Github is one of the best free civil level [[BaaS|https://www.alibabacloud.com/blog/backend-as-a-service-baas-for-efficient-software-development_519851]]:
-</p>
-<p>
-Its storage is basically free, allow us to store unlimited images and PDF files, which can have permanent URIs for public download.
-</p>
-<p>
-It has GraphQL API that allow us programmatically update our wiki
-</p>
-<p>
-It has free [[CI|https://github.com/features/actions]] to automatically deploy our TiddlyWiki blog.
-</p>
-<p>
-It provides unlimited repository, public and private, which enables us to store private content into our TiddlyWiki.
-</p>
+
+# Its storage is basically free, allow us to store unlimited images and PDF files, which can have permanent URIs for public download.
+# It has GraphQL API that allow us programmatically update our wiki
+# It has free [[CI|https://github.com/features/actions]] to automatically deploy our TiddlyWiki blog.
+# It provides unlimited repository, public and private, which enables us to store private content into our TiddlyWiki.

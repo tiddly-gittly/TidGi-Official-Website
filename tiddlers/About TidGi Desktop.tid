@@ -1,17 +1,13 @@
 created: 20230601113730403
 creator: 马不前
-modified: 20230601145133804
-modifier: 林一二
+modified: 20230602002811817
+modifier: 马不前
 tags: en-GB FrontPage
 title: About TidGi Desktop
 type: text/vnd.tiddlywiki
 
-<p>
 TidGi is a cross-platform Note Taking & GTD & Fragment Knowledge Management desktop app powered by [[nodejs-TiddlyWiki|https://github.com/Jermolene/TiddlyWiki5#installing-tiddlywiki-on-nodejs]], it ship with a lot of tiddlywiki plugins from the [[TiddlyWiki community|https://groups.google.com/forum/#!forum/tiddlywiki]].
-</p>
-<p>
+
 You can call it [[TG-Note|https://github.com/tiddly-gittly/TGNote]], it is totally free and you own all your data. Code by the people, build for the people.
-</p>
-<p>
+
 It used to named TiddlyGit, means TiddlyWiki with easy Git backup, short for TidGi now.
-</p>

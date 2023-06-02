@@ -1,15 +1,14 @@
 created: 20230601044800771
 creator: 马不前
-modified: 20230601144133312
-modifier: 林一二
+modified: 20230601160343577
+modifier: 马不前
 tags: [[Showcases and Demo]]
 title: Screenshot
 type: text/vnd.tiddlywiki
 
 [img[main-window-hide-bar.png]]
 
-<details>
-<summary>More Screenshots ◀</summary>
+<<details label:"More Screenshots" src:"
 
 | Load NodeJS Wiki |
 |[img[main-window.png]]|
@@ -27,4 +26,4 @@ type: text/vnd.tiddlywiki
 | Community Plugin Library |
 |[img[community-plugin-library.png]]|
 
-</details>
+">>

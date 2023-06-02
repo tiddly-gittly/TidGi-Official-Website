@@ -1,15 +1,14 @@
 created: 20230522163555567
 creator: 林一二
-modified: 20230601143117924
-modifier: 林一二
+modified: 20230601160226833
+modifier: 马不前
 tags: 产品截图及试用
 title: 截图
 type: text/vnd.tiddlywiki
 
 [img[main-window-hide-bar.png]]
 
-<details>
-<summary>更多截图 ◀</summary>
+<<details label:"更多截图" src:"
 
 | 加载 NodeJS 版维基 |
 |[img[main-window.png]]|
@@ -26,4 +25,4 @@ type: text/vnd.tiddlywiki
 | 社区插件源 |
 |[img[community-plugin-library.png]]|
 
-</details>
+">>

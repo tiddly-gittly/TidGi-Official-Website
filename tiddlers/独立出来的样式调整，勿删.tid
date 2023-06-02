@@ -1,6 +1,6 @@
 created: 20230601130625349
 creator: 马不前
-modified: 20230601130657853
+modified: 20230602075653846
 modifier: 马不前
 tags: $:/tags/Stylesheet
 title: 独立出来的样式调整，勿删
@@ -8,7 +8,6 @@ type: text/vnd.tiddlywiki
 
 html body, .tc-sidebar-scrollable-backdrop {
 	font-family: "Arvo","LXGW WenKai Lite", "Times";
-	background: url(<<datauri "$:/themes/tiddlywiki/starlight/ltbg.jpg">>);
 }
 
 .tc-page-controls svg {

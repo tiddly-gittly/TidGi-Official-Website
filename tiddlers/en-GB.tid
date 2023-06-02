@@ -1,15 +1,17 @@
 created: 20230601014532026
 creator: 马不前
 list: TidGi [[Showcases and Demo]] [[About TidGi Desktop]] [[Related Posts About TidGi]] Download [[Mobile App]] [[Data and Privacy Protection]] [[Differences from other App]] [[Why Github as storage]] Development
-modified: 20230601145217265
-modifier: 林一二
+modified: 20230602001948174
+modifier: 马不前
 tags: Languages
 title: en-GB
 type: text/vnd.tiddlywiki
 
 <$list filter="[tag<currentTiddler>tag[FrontPage]]">
   <section class="main-page-section">
-		<h2> <<currentTiddler>> </h2>
-    {{!!text}}
+	
+!!<<currentTiddler>>
+{{!!text}}
+
   </section>
 </$list>

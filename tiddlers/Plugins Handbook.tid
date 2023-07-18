@@ -1,0 +1,10 @@
+created: 20230718161203705
+creator: 林一二
+modified: 20230718161619525
+modifier: 林一二
+tags: en-GB FrontPage
+title: Plugins Handbook
+
+The design goal of TidGi is to work out of the box, but this also means that TidGi includes a large number of plugins from the TidGi community. In this handbook, you can find usage of some plugins that pre-installed in TidGi.
+
+[[Open handbook|Plugins Handbook/Menu]]

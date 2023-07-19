@@ -1,13 +1,13 @@
 created: 20230718160552704
 creator: 林一二
-modified: 20230718161117352
+modified: 20230719063237670
 modifier: 林一二
 tags: [[TidGi Feature Handbook]]
 title: TidGi Feature Handbook/Localized AI Copilot
 
 Local AI configuration tutorial:
 
-# At least [[v0.8.1-prerelease3|https://github.com/tiddly-gittly/TidGi-Desktop/releases]] or higher version of TidGi.
+# At least [[v0.8.1-prerelease6|https://github.com/tiddly-gittly/TidGi-Desktop/releases]] or higher version of TidGi.
 ## Install and open TidGi, open [[TidGi Settings]], find [[Language Model Settings]], click the "Open Model Folder" button to open the model folder.
 ## Note that the folder name is `language-model`.
 # Download the `ggml-vic7b-q5_1.bin` AI model File on [[huggingface/vicuna/ggml-vicuna-7b-1.1|https://huggingface.co/vicuna/ggml-vicuna-7b-1.1/tree/main]].

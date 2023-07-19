@@ -1,13 +1,13 @@
 created: 20230718015127147
 creator: 林一二
-modified: 20230718161005991
+modified: 20230719063245702
 modifier: 林一二
 tags: 太记功能手册
 title: 太记功能手册/本地AI助手
 
 本地 AI 配置教程：
 
-# 至少 [[v0.8.1-prerelease3|https://github.com/tiddly-gittly/TidGi-Desktop/releases]] 或更高版本的太记
+# 至少 [[v0.8.1-prerelease6|https://github.com/tiddly-gittly/TidGi-Desktop/releases]] 或更高版本的太记
 ## 安装并打开太记，打开[[太记设置]]，找到[[语言模型设置]]，点击其中的「打开模型文件夹」按钮，打开放模型的文件夹。
 ## 注意文件夹名是 `language-model`
 # 下载 [[huggingface/vicuna/ggml-vicuna-7b-1.1|https://huggingface.co/vicuna/ggml-vicuna-7b-1.1/tree/main]] 上的 `ggml-vic7b-q5_1.bin` AI 模型文件

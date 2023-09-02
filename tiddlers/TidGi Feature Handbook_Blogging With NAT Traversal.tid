@@ -1,0 +1,56 @@
+created: 20230902141821730
+creator: 林一二
+modified: 20230902145758243
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/Blogging With NAT Traversal
+
+TidGi comes with a one-click open server function, which can be used not only as a HTTP API function to link other applications, but also as a blog server.
+
+Please refer to [[TidGi Feature Handbook/Enabling HTTP API]] to complete the setup, and then continue to read on.
+
+!!! Test Intranet Access
+
+At this point, you can now access your blog on your intranet. You can access your blog on your computer's browser by "Right click on the workspace icon - Open with browser". The cell phone and computer in the same Wifi network are "in the same intranet", they can also open the same webpage to access your blog.
+
+!!! Secure Configuration, Read-Only Access
+
+After successfully accessing your intranet, let's proceed to configure the extranet access, which requires the use of NAT Traversal, which means that everyone in the extranet can penetrate the Wifi router's intranet defense wall to access your blog. This may not sound very secure, so we need to configure the security first.
+
+"Right click on the workspace icon - Configure Workspace - Blog and Server Settings - Read-only Mode" to turn on read-only mode.
+
+If you don't turn on read-only mode, anyone who accesses your intranet blog through intranet penetration can delete your notes at will! So be sure to turn it on. That's why we're using an idle computer, because with read-only mode on you won't be able to edit it yourself, you'll only be able to update the content through regular automatic synchronization.
+
+!!! Configure Intranet Penetration for Everyone to Access
+
+The developers of TidGi use [[Cpolar|https://i.cpolar.com/m/4eW6]], a free intranet penetration. Naturally, you can also use other tools such as peanut shells, or just ask your internet provider to provide you with extranet access, there are a lot of tutorials out there. We will only use [[Cpolar|https://i.cpolar.com/m/4eW6]] as an example.
+
+See the "Downloads" section of the website for details on how to install it. After installation, open its interface and configure the domain name and local port.
+
+The ports can be viewed in "Right click on the workspace icon - Configuration workspace - Blog and Server Settings - Local Server Ports".
+
+After saving, you can access it from the Internet. TidGi's official website is deployed in this way, which is convenient and fast, but it should be noted that TidGi's official website uses the lowest-grade paid version of Cpolar in order to bind domain names, and the free version can only use random domain names.
+
+!!! Use an idle computer to open a blog
+
+It is best to use an idle computer to keep 7x24 hours open to open the blog, you only need to configure a good regular automatic synchronization, and then configure the intranet penetration can be.
+
+The good thing about an idle computer is that you can keep it in 'read-only mode' and you don't need to edit it anyway.
+
+!!! Starting a blog with a server
+
+After you've configured it, you can see what command line parameter TidGi was started with in "Right click on workspace icon - Configuration workspace - Blog and Server Settings - Command line parameter for last startup".
+
+Copy and paste this command line parameter to a server with [[Tiddlywiki Command Line Tools|https://www.npmjs.com/package/tiddlywiki]] installed, and you can start a server-side blog that works exactly like the one TidGi started.
+
+!!! Starting a blog on your everyday computer
+
+Since we want to start the blog in "read-only mode", but want to be able to edit it, you need to create a new workspace and use [[Import Local Wiki|TidGi Functionality Manual/Add Workspace/Import Local Wiki]] to import your existing wiki folder, so that the two workspaces will be exactly the same.
+
+Then you can configure the new workspace with read-only mode and other configurations you need for blogging, without affecting the daily editing of your original workspace.
+
+!!! Optimize loading performance
+
+If you change the "Right click workspace icon - Configure workspace - Blog and server settings - Knowledge base root tiddler" to `$:/core/save/lazy-all`, you can speed up access by allowing readers to open the page with only the minimum amount of content loaded. However, this feature is not mature enough and may cause some bugs, so it is better to use `$:/core/save/lazy-images` by default.
+
+When you turn on read-only mode, the "Plugins to Ignore" setting appears, which you can use to check the plugins that are only needed for editing modes, such as codemirror, to speed up access by only loading what the reader needs to read when the page is opened.

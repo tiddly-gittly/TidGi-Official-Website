@@ -1,0 +1,38 @@
+created: 20230902145805344
+creator: 林一二
+modified: 20230902150041159
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/Enabling HTTP API
+
+!!! How to open
+
+On the TidGi sidebar:
+
+Right click on the workspace icon - Configure workspace - Blog and server settings - Enable HTTP API
+
+!!! What it does
+
+You can use [[TW-MobiLe-Sync Mobile tiddloid Mobile Sync TidGi Desktop Plugin|https://tw-cpl.netlify.app/#linonetwo%2Ftw-mobile-sync]] now, because it uses HTTP API to synchronize data.
+
+You can start a blog now, refer to [[Running Tiddlywiki nodejs blog on a mobile phone|https://wiki.onetwo.ren/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E8%BF%90%E8%A1%8C%E5%A4%AA%E5%BE%AEnodejs%E5%8D%9A%E5%AE%A2]], or [[TidGi Feature Handbook/Blogging With NAT Traversal]].
+
+It is possible to synchronize data with each other and third-party apps, if the third-party apps are adapted to the TidGi HTTP API.
+
+!!! Security
+
+When turned on, other people in the same Wifi LAN can access your notes, so this feature is turned off by default. You need to pay attention to information security!
+
+!!! Error 401
+
+If "Credential authentication" is enabled, this error will be reported, 401 means access is denied because of invalid credentials. The "Credentials Authentication" feature requires knowledge of web technologies to use, but it can greatly increase security./Opening a Blog via Intranet Penetration]].
+
+It is possible to synchronize data with each other and third-party apps, if the third-party apps are adapted to the TidGi HTTP API.
+
+!!! Security
+
+When turned on, other people in the same Wifi LAN can access your notes, so this feature is turned off by default. You need to pay attention to information security!
+
+!!! Error 401
+
+If "Credential authentication" is enabled, this error will be reported, 401 means access is denied because of invalid credentials. The "Credentials Authentication" feature requires knowledge of web technologies to use, but it can greatly increase security.

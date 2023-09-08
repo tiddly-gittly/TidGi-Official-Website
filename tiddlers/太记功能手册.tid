@@ -1,6 +1,6 @@
 created: 20230717173628608
 creator: 林一二
-modified: 20230718160245153
+modified: 20230908045439334
 modifier: 林一二
 tags: zh-Hans FrontPage
 title: 太记功能手册
@@ -8,3 +8,5 @@ title: 太记功能手册
 太记内置本地化AI、Git备份同步等功能，本手册介绍了如何配置它们。
 
 [[开启手册|太记功能手册/目录]]
+
+你可能还想[[排查问题]]

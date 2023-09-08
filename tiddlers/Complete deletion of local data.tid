@@ -1,0 +1,16 @@
+created: 20230908045518563
+creator: 林一二
+modified: 20230908045631770
+modifier: 林一二
+tags: [[Trouble Shooting]]
+title: Complete deletion of local data
+
+If you're experiencing app crashes and reinstallation doesn't work, then you may need to delete your local data (remember to back up your files first)
+
+!!! MacOS
+
+Delete.
+
+``.
+/Users/your username/Library/Application\ Support/TidGi/
+```

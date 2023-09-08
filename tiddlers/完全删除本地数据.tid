@@ -1,0 +1,16 @@
+created: 20230908045203729
+creator: 林一二
+modified: 20230908045344827
+modifier: 林一二
+tags: 排查问题
+title: 完全删除本地数据
+
+如果你遇到应用崩溃，重装无效，那你可能需要删除本地数据（记得先备份好自己的文件）
+
+!! MacOS
+
+删除
+
+```
+/Users/你的用户名/Library/Application\ Support/TidGi/
+```

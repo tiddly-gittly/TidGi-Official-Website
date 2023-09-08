@@ -1,6 +1,6 @@
 created: 20230718160340004
 creator: 林一二
-modified: 20230718162001059
+modified: 20230908045502702
 modifier: 林一二
 tags: en-GB FrontPage
 title: TidGi Feature Handbook
@@ -8,3 +8,5 @@ title: TidGi Feature Handbook
 TidGi has built-in features such as localized AI, Git backup synchronization, etc. This handbook describes how to configure them.
 
 [[Open the handbook|TidGi Feature Handbook/Menu]]
+
+You may also want to [[Trouble Shooting]]

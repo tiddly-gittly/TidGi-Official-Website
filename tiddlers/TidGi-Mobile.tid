@@ -1,0 +1,26 @@
+created: 20230911150421879
+creator: 林一二
+modified: 20230911151548168
+modifier: 林一二
+tags: Index
+title: TidGi-Mobile
+
+<$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
+
+	<$list filter="[<lang>search[zh]]">
+		<$list filter="[tag<currentTiddler>tag[TidGiMobileFrontPage]]">
+			<section class="main-page-section">
+
+				!! <<currentTiddler>>
+				{{!!text}}
+
+			</section>
+		</$list>
+	</$list>
+
+	<$list filter="[<lang>!search[zh]]">
+		{{TidGi-Mobile Feature Handbook}}
+	</$list>
+
+</$list>
+

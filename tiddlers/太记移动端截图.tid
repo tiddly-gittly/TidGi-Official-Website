@@ -1,0 +1,38 @@
+created: 20230911151557175
+creator: 林一二
+modified: 20230911153435721
+modifier: 林一二
+tags: TidGiMobileFrontPage TidGi-Mobile zh-Hans
+title: 太记移动端截图
+
+<div style="display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;">
+
+<div style="display:flex;flex-direction:column;">
+太记移动端中打开的知识库界面
+[img[Screenshot-Wiki.jpg]]
+</div>
+
+<div style="display:flex;flex-direction:column;">
+通过扫二维码从桌面端同步知识库，添加到本地      
+[img[Screenshot-QR.jpg]]
+</div>
+
+<div style="display:flex;flex-direction:column;">
+在设置里切换语言等
+[img[Screenshot-Preference.jpg]]
+</div>
+
+<div style="display:flex;flex-direction:column;">
+长按列表里的项目，可以打开工作区设置界面
+[img[Screenshot-Edit-Wiki.jpg]]
+</div>
+
+[img[Screenshot-Edit-Server.jpg]]
+
+[img[Screenshot-Edit-Wiki-Server.jpg]]
+
+[img[Screenshot-Import-Existing-Server.jpg]]
+
+[img[Screenshot-Importing.jpg]]
+
+</div>

@@ -1,12 +1,12 @@
 created: 20230601042236678
 creator: 马不前
-modified: 20230907115859655
+modified: 20230911152654762
 modifier: 林一二
 tags: zh-Hans FrontPage
 title: 移动端应用
 type: text/vnd.tiddlywiki
 
-* [[太记移动端（TidGi-Mobile）|https://github.com/tiddly-gittly/TidGi-Mobile]] 是与太记桌面版（TidGi-Desktop）配对的官方应用程序，由 [[@linonetwo|https://github.com/linonetwo]] 开发，甚至可用于 100MB 以上的巨大 wiki，让你从小用到大。
+* [[太记移动端（TidGi-Mobile）|TidGi-Mobile]] 是与太记桌面版（TidGi-Desktop）配对的官方应用程序，由 [[@linonetwo|https://github.com/linonetwo]] 开发，甚至可用于 100MB 以上的巨大 wiki，让你从小用到大。
 * 也可用[[@donmor|https://github.com/donmor]]开发的安卓应用程序[[Tiddloid|https://github.com/donmor/Tiddloid]]。它适用于较小的 wiki，而且你可以直接查看和访问 HTML 版 wiki。
 
 你可以随时在它们之间切换，并随时在它们和太记之间同步数据。它们都是本地优先、开源并兼容太微维基生态系统的。

@@ -1,0 +1,38 @@
+created: 20230911152026442
+creator: 林一二
+modified: 20230911153421833
+modifier: 林一二
+tags: TidGi-Mobile en-GB TidGiMobileFrontPage
+title: Screenshot of TidGi-Mobile
+
+<div style="display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;">
+
+<div style="display:flex;flex-direction:column;">
+Wiki UI in TidGi Mobile
+[img[Screenshot-Wiki.jpg]]
+</div>
+
+<div style="display:flex;flex-direction:column;">
+Adding Wiki by Scanning QR       
+[img[Screenshot-QR.jpg]]
+</div>
+
+<div style="display:flex;flex-direction:column;">
+Switch Language on Preference
+[img[Screenshot-Preference.jpg]]
+</div>
+
+<div style="display:flex;flex-direction:column;">
+Edit Wiki config in the list by long press
+[img[Screenshot-Edit-Wiki.jpg]]
+</div>
+
+[img[Screenshot-Edit-Server.jpg]]
+
+[img[Screenshot-Edit-Wiki-Server.jpg]]
+
+[img[Screenshot-Import-Existing-Server.jpg]]
+
+[img[Screenshot-Importing.jpg]]
+
+</div>

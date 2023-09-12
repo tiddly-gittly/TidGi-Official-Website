@@ -15,16 +15,22 @@ set HTTPS_PROXY=http://localhost:1080
 // $.env.HTTP_PROXY = 'http://127.0.0.1:1080';
 // $.env.HTTPS_PROXY = 'http://127.0.0.1:1080';
 
-const latestReleaseData = await fetch('https://api.github.com/repos/tiddly-gittly/TidGi-Desktop/releases/latest').then(
+const latestDesktopReleaseData = await fetch('https://api.github.com/repos/tiddly-gittly/TidGi-Desktop/releases/latest').then(
   async (response) => await response.json(),
 );
-const latestVersion = latestReleaseData.tag_name.replace('v', '');
-const urls = latestReleaseData.assets.map((asset) => asset.browser_download_url);
-console.log(urls);
+const latestMobileReleaseData = await fetch('https://api.github.com/repos/tiddly-gittly/TidGi-Mobile/releases/latest').then(
+  async (response) => await response.json(),
+);
+const latestDesktopVersion = latestDesktopReleaseData.tag_name.replace('v', '');
+const latestMobileVersion = latestMobileReleaseData.tag_name.replace('v', '');
+const desktopUrls = latestDesktopReleaseData.assets.map((asset) => asset.browser_download_url);
+const mobileUrls = latestMobileReleaseData.assets.map((asset) => asset.browser_download_url);
+console.log(desktopUrls);
+console.log(mobileUrls);
 // download urls to `files` folder
 
-async function downloadAsset(asset) {
-  const fileName = asset.name.replace(latestVersion, 'latest');
+async function downloadAsset(asset, rename) {
+  const fileName = rename(asset.name);
   console.log(`Downloading ${fileName} from ${asset.browser_download_url}`);
   try {
     await unlink(destination);
@@ -45,4 +51,13 @@ async function downloadAsset(asset) {
 }
 
 await mkdir(path.join(__dirname, '../files'), { recursive: true });
-await Promise.all(latestReleaseData.assets.map((asset) => backOff(() => downloadAsset(asset))));
+await Promise.all([
+  ...latestDesktopReleaseData.assets.map((asset) => backOff(() => downloadAsset(asset, (name) => {
+    const fileName = name.replace(latestDesktopVersion, 'latest');
+    return fileName
+  }))),
+  ...latestMobileReleaseData.assets.map((asset) => backOff(() => downloadAsset(asset, (name) => {
+    const fileName = name.replace('app-release-signed', 'TidGi-Mobile');
+    return fileName
+  }))),
+]);

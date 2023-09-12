@@ -8,7 +8,7 @@ title: TidGi-Mobile
 <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
 
 	<$list filter="[<lang>search[zh]]">
-		<$list filter="[tag<currentTiddler>tag[TidGiMobileFrontPage]]">
+		<$list filter="[tag<currentTiddler>tag[TidGiMobileFrontPage]tag[zh-Hans]]">
 			<section class="main-page-section">
 
 				!! <<currentTiddler>>
@@ -19,7 +19,14 @@ title: TidGi-Mobile
 	</$list>
 
 	<$list filter="[<lang>!search[zh]]">
-		{{TidGi-Mobile Feature Handbook}}
+		<$list filter="[tag<currentTiddler>tag[TidGiMobileFrontPage]tag[en-GB]]">
+			<section class="main-page-section">
+
+				!! <<currentTiddler>>
+				{{!!text}}
+
+			</section>
+		</$list>
 	</$list>
 
 </$list>

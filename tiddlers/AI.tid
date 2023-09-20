@@ -1,14 +1,14 @@
-created: 20230911150421879
+created: 20230920073633422
 creator: 林一二
-modified: 20230920073938026
+modified: 20230920073907941
 modifier: 林一二
 tags: Index
-title: TidGi-Mobile
+title: AI
 
 <$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
 
 	<$list filter="[<lang>search[zh]]">
-		<$list filter="[tag[TidGiMobileFrontPage]tag[zh-Hans]]">
+		<$list filter="[tag[AI]tag[zh-Hans]]">
 			<section class="main-page-section">
 
 				!! <<currentTiddler>>
@@ -19,7 +19,7 @@ title: TidGi-Mobile
 	</$list>
 
 	<$list filter="[<lang>!search[zh]]">
-		<$list filter="[tag[TidGiMobileFrontPage]tag[en-GB]]">
+		<$list filter="[tag[AI]tag[en-GB]]">
 			<section class="main-page-section">
 
 				!! <<currentTiddler>>

@@ -1,0 +1,10 @@
+created: 20231012042622260
+creator: 林一二
+modified: 20231012042857006
+modifier: 林一二
+tags: 太记功能手册
+title: 太记功能手册/剪藏网页
+
+使用[ext[「太微剪藏」浏览器插件|https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector]]。
+
+在使用前，你需要先确保已经[[开启 HTTP API|太记功能手册/开启 HTTP API]]。

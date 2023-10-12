@@ -1,10 +1,37 @@
 created: 20231012042813172
 creator: 林一二
-modified: 20231012042937029
+modified: 20231012181224486
 modifier: 林一二
 tags: [[TidGi-Mobile Feature Handbook]]
 title: TidGi-Mobile Feature Handbook/Clipping Webpage
 
-You can use [ext[Tiddlywiki Collector Browser Extension|https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector]].
+You can use Tiddlywiki Collector Browser Extension.
+
+[img[https://talk.tiddlywiki.org/uploads/default/original/2X/f/f1fc9bb40133ba6683d1a2d363ceca698bdaa56d.png]]
 
 Before starting, make sure you have already [[Enabling HTTP API|TidGi Feature Handbook/Enabling HTTP API]].
+
+!! Download
+
+# Firefox: [ext[tiddlyWiki Collector – Get this Extension for 🦊 Firefox (en-US)|https://addons.mozilla.org/en-US/firefox/addon/tiddlywiki-collector/]]
+# Chrome/Edge: Currently, it is not on the store, download it from https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector/releases , download the [ext[chrome.crx|https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector/releases/download/v0.0.3/chrome.crx]] and drag to your Chrome/Edge Browser.
+
+!! Usage
+
+!!! Open the "Options", fill-in the local knowledge base URL
+
+When first installed, browser will opening Welcome page of this extension, there is an "Options" button you can click.
+
+Or you can google about how to open Options of an browser extension.
+
+Then fill in the local nodejs wiki WebServer API url, for example: `localhost:5212`
+
+[img[ClippingWebPageUsage1.png]]
+
+Goto a website you want to clip, click on the extension's icon to open the popup window:
+
+[img[ClippingWebPageUsage2.png]]
+
+!! Resources
+
+Source Code: [ext[tiddly-gittly/Browser-Extension-Tiddlywiki-Collector|https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector]]

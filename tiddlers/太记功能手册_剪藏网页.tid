@@ -1,10 +1,35 @@
 created: 20231012042622260
 creator: 林一二
-modified: 20231012042857006
+modified: 20231012181208389
 modifier: 林一二
 tags: 太记功能手册
 title: 太记功能手册/剪藏网页
 
-使用[ext[「太微剪藏」浏览器插件|https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector]]。
+您可以使用太微剪藏浏览器扩展。
 
-在使用前，你需要先确保已经[[开启 HTTP API|太记功能手册/开启 HTTP API]]。
+在开始之前，请确保您已经 [[开启 HTTP API|太记功能手册/开启 HTTP API]]。
+
+!! 下载
+
+# 火狐： [ext[太微剪藏 - 下载这个插件 🦊 到 Firefox (zh-CN)|https://addons.mozilla.org/zh-CN/firefox/addon/tiddlywiki-collector/]].
+# Chrome/Edge：目前，它不在商店里，从 https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector/releases 下载，下载 [ext[chrome.crx|https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector/releases/download/v0.3.0/chrome.crx]] 并拖动到你的 Chrome/Edge 浏览器。
+
+!! 使用方法
+
+!!! 打开「选项」，填写本地知识库网址
+
+首次安装时，浏览器会打开此扩展的欢迎页面，其中有一个「选项」按钮可供点击。
+
+或者，你可以在谷歌上搜索如何打开浏览器扩展的「选项」。
+
+然后填写本地的 [[NodeJS Wiki 知识库网络服务器 API 网址|太记功能手册/开启 HTTP API]]，例如：`localhost:5212`。
+
+[img[剪藏网页用法1.png]]
+
+转到要剪藏的网站，点击扩展图标打开弹出窗口：
+
+[img[剪藏网页用法2.png]]
+
+!! 资源
+
+源代码： [ext[tiddly-gittly/Browser-Extension-TiddlywikiCollector|https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector]] !

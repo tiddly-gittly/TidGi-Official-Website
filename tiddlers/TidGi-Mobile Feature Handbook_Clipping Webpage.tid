@@ -1,6 +1,6 @@
 created: 20231012042813172
 creator: 林一二
-modified: 20231012181224486
+modified: 20231013025025315
 modifier: 林一二
 tags: [[TidGi-Mobile Feature Handbook]]
 title: TidGi-Mobile Feature Handbook/Clipping Webpage
@@ -28,9 +28,23 @@ Then fill in the local nodejs wiki WebServer API url, for example: `localhost:52
 
 [img[ClippingWebPageUsage1.png]]
 
+!!! Use the WebClipper for Tiddlywiki
+
 Goto a website you want to clip, click on the extension's icon to open the popup window:
 
 [img[ClippingWebPageUsage2.png]]
+
+!!! Set Options / Preferences
+
+!!!! Firefox
+
+Don't forget to allow extension "access all websites"! Otherwise it will require click twice to get web content to clip.
+
+In Firefox, it is in "Manage Extensions" - "TiddlyWiki Collector" - "Permissions" - "Access your data for all websites" (Checked!)
+
+[img[ClippingWebPageUsage3.png]]
+
+Also you can open Options / Preferences page by clicking the "..." on the top right, and click "Preferences".
 
 !! Resources
 

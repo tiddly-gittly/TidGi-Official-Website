@@ -1,0 +1,16 @@
+created: 20231017091329572
+creator: 林一二
+modified: 20231017091757864
+modifier: 林一二
+tags: 太记功能手册
+title: 太记功能手册/云端备份/配置Github备份
+
+在「设置 - 同步和备份 - Git身份凭证」里，可以设置各个平台云同步所需的账号密码或同步秘钥。
+
+以 Github 为例，最关键的是，你首先需要获取你的 Github 个人访问令牌（Personal Access Token），填在第一个框「用于登录Git的凭证」里：
+
+[img[配置Github备份.png]]
+
+获取方法详见[[Github官方文档 - 管理个人访问令牌|https://docs.github.com/zh/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens]]。
+
+注意在创建令牌时，要带上访问仓库（repo）相关的权限，才能正常保存。

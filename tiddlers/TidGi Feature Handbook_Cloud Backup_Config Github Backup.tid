@@ -1,0 +1,16 @@
+created: 20231017091954336
+creator: 林一二
+modified: 20231017092332812
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/Cloud Backup/Config Github Backup
+
+In "Preferences - Sync & Backup - Git Credentials", you can set the cloud account password or sync token required for cloud synchronization on each platform.
+
+In the example of Github, it's crucial that you first get your Github Personal Access Token, which you can fill out in the first box, "Credentials used to log in to Git":
+
+[img[ConfigureGithubBackup.png]]
+
+See [[Official Github Documentation - Managing Personal Access Tokens|https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal- for details on how to get them access-tokens]].
+
+Note that when you create the token, you have to bring the permissions related to accessing the repository in order to save it properly.

@@ -1,6 +1,6 @@
 created: 20231012042813172
 creator: 林一二
-modified: 20231017015027731
+modified: 20231017020122836
 modifier: 林一二
 tags: [[TidGi Feature Handbook]]
 title: TidGi Feature Handbook/Clipping Webpage
@@ -8,6 +8,8 @@ title: TidGi Feature Handbook/Clipping Webpage
 You can use Tiddlywiki Collector Browser Extension.
 
 [img[https://talk.tiddlywiki.org/uploads/default/original/2X/f/f1fc9bb40133ba6683d1a2d363ceca698bdaa56d.png]]
+
+!! Prerequisite
 
 Before starting, make sure you have already [[Enabling HTTP API|TidGi Feature Handbook/Enabling HTTP API]].
 

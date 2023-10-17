@@ -1,17 +1,21 @@
 created: 20231012042622260
 creator: 林一二
-modified: 20231013025337629
+modified: 20231017020237704
 modifier: 林一二
 tags: 太记功能手册
 title: 太记功能手册/剪藏网页
 
-您可以使用太微剪藏浏览器扩展。
+您可以使用「太微搜藏」浏览器扩展。
+
+[img[https://addons.mozilla.org/user-media/previews/thumbs/288/288503.jpg?modified=1697159434]]
+
+!! 先决条件
 
 在开始之前，请确保您已经 [[开启 HTTP API|太记功能手册/开启 HTTP API]]。
 
 !! 下载
 
-# 火狐： [ext[太微剪藏 - 下载这个插件 🦊 到 Firefox (zh-CN)|https://addons.mozilla.org/zh-CN/firefox/addon/tiddlywiki-collector/]].
+# 火狐： [ext[太微搜藏 - 下载这个插件 🦊 到 Firefox (zh-CN)|https://addons.mozilla.org/zh-CN/firefox/addon/tiddlywiki-collector/]].
 # Chrome/Edge：目前，它不在商店里，从 https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector/releases 下载，下载 [ext[chrome.crx|https://github.com/tiddly-gittly/Browser-Extension-Tiddlywiki-Collector/releases/download/v0.3.0/chrome.crx]] 并拖动到你的 Chrome/Edge 浏览器。
 
 !! 使用方法

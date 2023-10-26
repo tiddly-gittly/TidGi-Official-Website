@@ -1,8 +1,9 @@
 _render_template: static.sitemap.xml
 _render_type: text/plain
+code-body: yes
 created: 20150104144500000
 creator: Jim
-modified: 20231026052043162
+modified: 20231026084451268
 modifier: 林一二
 tags: static
 title: sitemap

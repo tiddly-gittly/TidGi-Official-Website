@@ -3,10 +3,10 @@ _render_type: text/plain
 code-body: yes
 created: 20150104144500000
 creator: Jim
-modified: 20231026084451268
+modified: 20231026091128722
 modifier: 林一二
 tags: static
-title: sitemap
+title: sitemap.xml
 type: text/vnd.tiddlywiki
 
 \define tv-wikilink-template() #$uri_encoded$

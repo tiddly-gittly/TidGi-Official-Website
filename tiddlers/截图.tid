@@ -1,7 +1,7 @@
 created: 20230522163555567
 creator: 林一二
-modified: 20230601160226833
-modifier: 马不前
+modified: 20231110070407145
+modifier: 林一二
 tags: 产品截图及试用
 title: 截图
 type: text/vnd.tiddlywiki
@@ -19,10 +19,13 @@ type: text/vnd.tiddlywiki
 | 多语言翻译和设置界面 |
 |[img[preference.png]]|
 
-| 交互式代码执行 |
-|[img[Interactive code execution.gif]]|
+| 交互式代码执行 | 菜单栏快捷窗口 |
+|[img[Interactive code execution.gif]]| [img[太记小窗截图.png]]|
 
 | 社区插件源 |
 |[img[community-plugin-library.png]]|
+
+
+
 
 ">>

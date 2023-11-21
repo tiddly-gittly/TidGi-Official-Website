@@ -34,6 +34,18 @@ type: text/vnd.tiddlywiki
 
 [img[click-to-ok.png]]
 
+另一种类似的方式去安装:
+
+1. 输入命令：sudo spctl --master-disable
+
+2. 设置 -> 安全性 -> 允许从以下位置下载的应用程序 任何来源
+
+3. 将安装包移动到“应用程序”
+
+4. 输入命令: sudo xattr -d com.apple.quarantine /Applications/TidGi.app
+
+5. 重新点击TidGi.app安装
+
 </details>
 
 !!!! Mac 命令行用户

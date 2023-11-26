@@ -1,6 +1,6 @@
 created: 20230601140518788
 creator: 林一二
-modified: 20230601145516702
+modified: 20231126073904647
 modifier: 林一二
 tags: tiddlywiki $:/tags/Stylesheet
 title: DefaultLinkStyles
@@ -20,7 +20,7 @@ a.tc-tiddlylink, a.tc-tiddlylink:hover {
   line-height: 1.3;
   color: <<colour foreground>>;
   border-bottom: <<colour tiddler-link-underline>>;
-  text-decoration: none;
+	text-decoration: underline;
   /** hover动画 */
   transition: background 120ms ease-in 0s;
 }
@@ -28,6 +28,7 @@ a.tc-tiddlylink, a.tc-tiddlylink:hover {
 
 a.tc-tiddlylink:hover {
   color: <<colour foreground>>;
+	text-decoration: none;
 }
 
 
@@ -35,7 +36,6 @@ a.tc-tiddlylink-external, a.tc-tiddlylink-external:visited {
 	padding: 2px;
   padding-bottom: 0px;
 	border-bottom: <<colour external-link-underline>>;
-	text-decoration: none;
   box-decoration-break: clone;
   font-weight: bold;
   color: <<colour foreground>>;

@@ -1,0 +1,14 @@
+created: 20231126073345248
+creator: 林一二
+modified: 20231126073526252
+modifier: 林一二
+tags: [[TidGi-Mobile Feature Handbook]]
+title: TidGi-Mobile Feature Handbook/First Time Guide
+
+## First, make sure that the desktop side of TaikooSky has been configured.
+## The latest version of TAICHI should already come with the Mobile-Sync plugin, but you may need to update it to the latest version via [[CPL|https://talk.tiddlywiki.org/t/tiddlywiki-cpl-tiddlywiki-world-of-google-app-store/2140]].
+## Make sure [[HTTP API Functions on Desktop|TidGi Feature Handbook/Enabling HTTP API]] is turned on.
+## On the mobile app, use the "Scan QR Code" button at the bottom of the mobile homepage to access the "Add Wiki Workspace" function.
+## If you have entered a workspace (opened a Wiki or a webpage), slide left to go back to the home page.
+## The gear button at the top right corner of the homepage, click on it to open the settings page.
+## It is recommended that you set your "username" in the settings before you start using it.

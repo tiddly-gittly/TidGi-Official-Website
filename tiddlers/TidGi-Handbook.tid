@@ -1,0 +1,23 @@
+created: 20231227083602560
+creator: 林一二
+modified: 20231227083824623
+modifier: 林一二
+tags: Topic
+title: TidGi-Handbook
+
+<$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
+
+	<$list filter="[<lang>search[zh]]">
+
+		{{太记功能手册}}
+
+	</$list>
+
+	<$list filter="[<lang>!search[zh]]">
+
+		{{TidGi Feature Handbook}}
+
+	</$list>
+
+</$list>
+

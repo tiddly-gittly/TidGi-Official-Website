@@ -1,0 +1,23 @@
+created: 20231227083947794
+creator: 林一二
+modified: 20231227084140256
+modifier: 林一二
+tags: Index
+title: Topic
+
+<$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
+
+	<$list filter="[<lang>search[zh]]">
+
+		此标签用于放置可分享给其他人的资源，会自动根据使用者浏览器语言翻译。
+
+	</$list>
+
+	<$list filter="[<lang>!search[zh]]">
+
+		This tab is used to place resources that can be shared with others and is automatically translated according to the user's browser language.
+
+	</$list>
+
+</$list>
+

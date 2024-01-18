@@ -73,7 +73,7 @@ await Promise.all([
           return fileName;
         });
       },
-      { numOfAttempts: 10000 },
+      { numOfAttempts: 10000, jitter: 'full' },
     );
   }),
   ...latestMobileReleaseData.assets.map((asset) =>

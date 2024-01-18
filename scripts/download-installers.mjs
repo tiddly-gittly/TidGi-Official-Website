@@ -1,11 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 import { mkdir, writeFile, unlink } from 'fs/promises';
+import Promise from 'bluebird';
 import { Readable } from 'stream';
 import { finished } from 'stream/promises';
 import { backOff } from 'exponential-backoff';
 
-require('dotenv').config()
+require('dotenv').config();
 const { GITHUB_TOKEN } = process.env;
 
 /* 
@@ -52,12 +53,22 @@ async function downloadAsset(asset, rename) {
 
 await mkdir(path.join(__dirname, '../files'), { recursive: true });
 await Promise.all([
-  ...latestDesktopReleaseData.assets.map((asset) => backOff(() => downloadAsset(asset, (name) => {
-    const fileName = name.replace(latestDesktopVersion, 'latest');
-    return fileName
-  }))),
-  ...latestMobileReleaseData.assets.map((asset) => backOff(() => downloadAsset(asset, (name) => {
-    const fileName = name.replace('app-release-signed', 'TidGi-Mobile');
-    return fileName
-  }))),
+  ...latestDesktopReleaseData.assets.map(async (asset) => {
+    await Promise.delay(10000 * Math.random());
+    await backOff(async () => {
+      console.log(`backoff retry ${asset.name}`);
+      await downloadAsset(asset, (name) => {
+        const fileName = name.replace(latestDesktopVersion, 'latest');
+        return fileName;
+      });
+    });
+  }),
+  ...latestMobileReleaseData.assets.map((asset) =>
+    backOff(() =>
+      downloadAsset(asset, (name) => {
+        const fileName = name.replace('app-release-signed', 'TidGi-Mobile');
+        return fileName;
+      }),
+    ),
+  ),
 ]);

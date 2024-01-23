@@ -1,0 +1,57 @@
+created: 20240123045322023
+creator: 林一二
+modified: 20240123050252175
+modifier: 林一二
+tags: [[TidGi Feature Handbook]] en-GB
+title: TidGi Feature Handbook/Reference External Files
+
+TidGi supports wiki link and `_canonical_uri` to use `file://` prefix (or `open://`, both works the same).
+
+!! File outside wiki's tiddlers folder (any location on your computer using absolute path)
+
+For example:
+
+> `[ext[Some External File Link with CJK character|file:///Users/linonetwo/Downloads/(OCRed)奖励的惩罚 (（美）科恩著) (Z-Library).pdf]]`
+
+> `[ext[An External Folder Link|file:///Users/linonetwo/Downloads/]]`
+
+Here `file:///` means `file://` at the beginning, plus `/` for the system root folder, not `///`.
+
+!! Files inside wiki's folder (using relative path)
+
+!!! Open image file using system image viewer
+
+> `[[link to open image|file://tiddlers/TiddlyWikiIconBlack.png]]`
+> `[[link to open image|file://./tiddlers/TiddlyWikiIconBlack.png]]`
+
+`file://. /` is the beginning of `file://`, plus `. /` means the current folder, so it has the same effect as `file://`.
+
+!!! Open the folder using system file browser
+
+> `[[file://./files/]]`
+
+!!! Files in `files/` folder can also be imported like this
+
+> `[ext[File in files folder|file://../files/filename.pdf]]`
+
+So if you install the [[TidGi External Attachments Plugin|https://tw-cpl.netlify.app/#Plugin_202305190710119:Index%20Plugin_202305190710119]] when you drag a file into wiki, `_canonical_uri` created by this plugin will also prefixed by `file://`.
+
+!! More working examples
+
+```js
+[img[file:///var/folders/t3/0jyr287x3rd2m0b6ml8w4f2c0000gn/T/tidgi-dev/wiki/files/截屏2023-06-21 12.40.20.png]]
+
+[[file:///var/folders/t3/0jyr287x3rd2m0b6ml8w4f2c0000gn/T/tidgi-dev/wiki/files/截屏2023-06-21 12.40.20.png]]
+
+[[file:///var/folders/t3/0jyr287x3rd2m0b6ml8w4f2c0000gn/T/tidgi-dev/wiki/files/]]
+
+[[file:///var/folders/t3/0jyr287x3rd2m0b6ml8w4f2c0000gn/T/tidgi-dev/wiki/files]]
+
+[img[file://./files/截屏2023-06-21 12.40.20.png]]
+
+[[file://./files/截屏2023-06-21 12.40.20.png]]
+
+[[file://./files/]]
+
+[[file://./files]]
+```

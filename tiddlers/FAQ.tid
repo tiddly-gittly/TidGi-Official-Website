@@ -1,0 +1,23 @@
+created: 20240123052024327
+creator: 林一二
+modified: 20240123052243931
+modifier: 林一二
+tags: Topic
+title: FAQ
+
+<$list filter="[[$:/language]get[text]removeprefix[$:/languages/]else[en-GB]]" variable="lang">
+
+	<$list filter="[<lang>search[zh]]">
+
+		{{常见问题（FAQ）}}
+
+	</$list>
+
+	<$list filter="[<lang>!search[zh]]">
+
+		{{Frequently Asked Questions (FAQ)}}
+
+	</$list>
+
+</$list>
+

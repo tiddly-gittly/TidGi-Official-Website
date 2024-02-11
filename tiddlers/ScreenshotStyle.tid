@@ -1,0 +1,28 @@
+created: 20240211054916562
+creator: 林一二
+modified: 20240211060325107
+modifier: 林一二
+tags: $:/tags/Stylesheet tiddlywiki
+title: ScreenshotStyle
+
+\whitespace trim
+\import [[$:/themes/tiddlywiki/vanilla/base]]
+
+.screenshot-item {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-bottom: 10px;
+}
+@media (min-width: <<sidebarbreakpoint>>) {
+  .screenshot-item {
+    width: 30%;
+  }
+}
+
+.screenshot-container {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}

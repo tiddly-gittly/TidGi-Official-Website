@@ -1,38 +1,28 @@
 created: 20230911152026442
 creator: 林一二
-modified: 20230911153421833
+modified: 20240211061051886
 modifier: 林一二
 tags: TidGi-Mobile en-GB TidGiMobileFrontPage
 title: Screenshot of TidGi-Mobile
 
-<div style="display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;">
+\whitespace trim
 
-<div style="display:flex;flex-direction:column;">
-Wiki UI in TidGi Mobile
-[img[Screenshot-Wiki.jpg]]
-</div>
-
-<div style="display:flex;flex-direction:column;">
-Adding Wiki by Scanning QR       
-[img[Screenshot-QR.jpg]]
-</div>
-
-<div style="display:flex;flex-direction:column;">
-Switch Language on Preference
-[img[Screenshot-Preference.jpg]]
-</div>
-
-<div style="display:flex;flex-direction:column;">
-Edit Wiki config in the list by long press
-[img[Screenshot-Edit-Wiki.jpg]]
-</div>
-
-[img[Screenshot-Edit-Server.jpg]]
-
-[img[Screenshot-Edit-Wiki-Server.jpg]]
-
-[img[Screenshot-Import-Existing-Server.jpg]]
-
-[img[Screenshot-Importing.jpg]]
-
+<div class="screenshot-container">
+  <div class="screenshot-item">Wiki UI in TidGi Mobile [img[Screenshot-Wiki.jpg]]</div>
+  <div class="screenshot-item">Adding Wiki by Scanning QR [img[Screenshot-QR.jpg]]</div>
+  <div class="screenshot-item">Switch Language on Preference [img[Screenshot-Preference.jpg]]</div>
+  <div class="screenshot-item">Edit Wiki config in the list by long press [img[Screenshot-Edit-Wiki.jpg]]</div>
+  <div class="screenshot-item">Edit known server [img[Screenshot-Edit-Server.jpg]]</div>
+  <div class="screenshot-item">Edit server that wiki sync to [img[Screenshot-Edit-Wiki-Server.jpg]]</div>
+  <div class="screenshot-item">Import Existing Server [img[Screenshot-Import-Existing-Server.jpg]]</div>
+  <div class="screenshot-item">
+    Add Workspace, Create From Template [img[Screenshot-AddWorkspace-CreateFromTemplate.jpg]]
+  </div>
+  <div class="screenshot-item">
+    Add Workspace, Create From Template Click Use [img[Screenshot-AddWorkspace-CreateFromTemplate-ClickUse.jpg]]
+  </div>
+  <div class="screenshot-item">Importing wiki [img[Screenshot-Importing.jpg]]</div>
+  <div class="screenshot-item">Done Import [img[Screenshot-ImportDone.jpg]]</div>
+  <div class="screenshot-item">Add Workspace Add WebPage [img[Screenshot-AddWorkspace-AddWebPage.jpg]]</div>
+  <div class="screenshot-item">Main Menu [img[Screenshot-MainMenu.jpg]]</div>
 </div>

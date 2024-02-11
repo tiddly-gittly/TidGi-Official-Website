@@ -1,14 +1,25 @@
 created: 20231126073345248
 creator: 林一二
-modified: 20231126073526252
+modified: 20240211054720047
 modifier: 林一二
 tags: [[TidGi-Mobile Feature Handbook]]
 title: TidGi-Mobile Feature Handbook/First Time Guide
 
-## First, make sure that the desktop side of TaikooSky has been configured.
+!! Sync From Desktop
+
+# First, make sure that the desktop side of TaikooSky has been configured.
 ## The latest version of TAICHI should already come with the Mobile-Sync plugin, but you may need to update it to the latest version via [[CPL|https://talk.tiddlywiki.org/t/tiddlywiki-cpl-tiddlywiki-world-of-google-app-store/2140]].
 ## Make sure [[HTTP API Functions on Desktop|TidGi Feature Handbook/Enabling HTTP API]] is turned on.
-## On the mobile app, use the "Scan QR Code" button at the bottom of the mobile homepage to access the "Add Wiki Workspace" function.
+## On the sidebar in the wiki on your computer, you can see the MobileSync tab, click on it to open it and you can see a QR code
+# On the mobile app, use the "Scan QR Code" button at the bottom of the mobile homepage to access the "Add Wiki Workspace" function.
 ## If you have entered a workspace (opened a Wiki or a webpage), slide left to go back to the home page.
-## The gear button at the top right corner of the homepage, click on it to open the settings page.
+# The gear button at the top right corner of the homepage, click on it to open the settings page.
 ## It is recommended that you set your "username" in the settings before you start using it.
+
+!! If you don't have a desktop computer.
+
+# Create your first wiki by referring to [[TidGi-Mobile Feature Handbook/Create From Template]].
+# Afterwards, you can always add computer synchronization by long-pressing a workspace in the list and opening the workspace settings.
+## In the opened workspace settings, click "Server List", and then click "Add New Server".
+## (Refer to "Sync From Desktop" to find the QR code for PC)
+## Use the code scanning function to scan the QR code on the computer version.

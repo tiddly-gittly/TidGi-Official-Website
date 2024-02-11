@@ -1,0 +1,20 @@
+created: 20240211054646632
+creator: 林一二
+modified: 20240211061147837
+modifier: 林一二
+tags: [[TidGi-Mobile Feature Handbook]]
+title: TidGi-Mobile Feature Handbook/Create From Template
+
+\whitespace trim
+
+<div class="screenshot-container">
+  <div class="screenshot-item">Main Menu [img[Screenshot-MainMenu.jpg]]</div>
+  <div class="screenshot-item">
+    Add Workspace, Create From Template [img[Screenshot-AddWorkspace-CreateFromTemplate.jpg]]
+  </div>
+  <div class="screenshot-item">
+    Add Workspace, Create From Template Click Use [img[Screenshot-AddWorkspace-CreateFromTemplate-ClickUse.jpg]]
+  </div>
+  <div class="screenshot-item">Importing wiki [img[Screenshot-Importing.jpg]]</div>
+  <div class="screenshot-item">Done Import [img[Screenshot-ImportDone.jpg]]</div>
+</div>

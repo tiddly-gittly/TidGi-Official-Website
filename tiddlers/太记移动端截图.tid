@@ -1,6 +1,6 @@
 created: 20230911151557175
 creator: 林一二
-modified: 20240211060405375
+modified: 20240211080716369
 modifier: 林一二
 tags: TidGiMobileFrontPage TidGi-Mobile zh-Hans
 title: 太记移动端截图
@@ -11,18 +11,4 @@ title: 太记移动端截图
   <div class="screenshot-item">太记移动端中打开的知识库界面 [img[Screenshot-Wiki.jpg]]</div>
   <div class="screenshot-item">通过扫二维码从桌面端同步知识库，添加到本地 [img[Screenshot-QR.jpg]]</div>
   <div class="screenshot-item">在设置里切换语言等 [img[Screenshot-Preference.jpg]]</div>
-  <div class="screenshot-item">长按列表里的项目，可以打开工作区设置界面 [img[Screenshot-Edit-Wiki.jpg]]</div>
-  <div class="screenshot-item">编辑已知的服务器 [img[Screenshot-Edit-Server.jpg]]</div>
-  <div class="screenshot-item">编辑工作区可以同步到的服务器 [img[Screenshot-Edit-Wiki-Server.jpg]]</div>
-  <div class="screenshot-item">
-    点击添加已知的服务器到工作区，成为可以同步到的服务器 [img[Screenshot-Import-Existing-Server.jpg]]
-  </div>
-  <div class="screenshot-item">添加工作区，从模板创建 [img[Screenshot-AddWorkspace-CreateFromTemplate-zh.jpg]]</div>
-  <div class="screenshot-item">
-    添加工作区，从模板创建点击「使用」 [img[Screenshot-AddWorkspace-CreateFromTemplate-ClickUse.jpg]]
-  </div>
-  <div class="screenshot-item">工作区导入中 [img[Screenshot-Importing-zh.jpg]]</div>
-  <div class="screenshot-item">导入完毕 [img[Screenshot-ImportDone-zh.jpg]]</div>
-  <div class="screenshot-item">添加工作区，添加网页快捷方式 [img[Screenshot-AddWorkspace-AddWebPage-zh.jpg]]</div>
-  <div class="screenshot-item">主菜单 [img[Screenshot-MainMenu-zh.jpg]]</div>
 </div>

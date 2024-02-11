@@ -1,0 +1,20 @@
+created: 20240211065037787
+creator: 林一二
+modified: 20240211065228888
+modifier: 林一二
+tags: [[TidGi-Mobile Feature Handbook]]
+title: TidGi-Mobile Feature Handbook/Add Desktop to Sync
+
+\whitespace trim
+
+# In the opened workspace settings, click "Server List", and then click "Add New Server".
+# (Refer to "Sync From Desktop" to find the QR code for PC)
+# Use the code scanning function to scan the QR code on the computer version.
+
+<div class="screenshot-container">
+  <div class="screenshot-item">Main Menu [img[Screenshot-MainMenu.jpg]]</div>
+  <div class="screenshot-item">Edit Wiki config in the list by long press [img[Screenshot-Edit-Wiki.jpg]]</div>
+  <div class="screenshot-item">Edit known server [img[Screenshot-Edit-Server.jpg]]</div>
+  <div class="screenshot-item">Edit server that wiki sync to [img[Screenshot-Edit-Wiki-Server.jpg]]</div>
+  <div class="screenshot-item">Import Existing Server [img[Screenshot-Import-Existing-Server.jpg]]</div>
+</div>

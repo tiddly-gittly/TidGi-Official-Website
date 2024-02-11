@@ -1,6 +1,6 @@
 created: 20231126073345248
 creator: 林一二
-modified: 20240211054720047
+modified: 20240211065208338
 modifier: 林一二
 tags: [[TidGi-Mobile Feature Handbook]]
 title: TidGi-Mobile Feature Handbook/First Time Guide
@@ -19,7 +19,4 @@ title: TidGi-Mobile Feature Handbook/First Time Guide
 !! If you don't have a desktop computer.
 
 # Create your first wiki by referring to [[TidGi-Mobile Feature Handbook/Create From Template]].
-# Afterwards, you can always add computer synchronization by long-pressing a workspace in the list and opening the workspace settings.
-## In the opened workspace settings, click "Server List", and then click "Add New Server".
-## (Refer to "Sync From Desktop" to find the QR code for PC)
-## Use the code scanning function to scan the QR code on the computer version.
+# Afterwards, you can always add computer synchronization by long-pressing a workspace in the list and opening the workspace settings, see [[TidGi-Mobile Feature Handbook/Add Desktop to Sync]]

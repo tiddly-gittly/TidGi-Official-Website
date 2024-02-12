@@ -1,11 +1,11 @@
 created: 20240212084428068
 creator: 林一二
-modified: 20240212084654854
+modified: 20240212154216445
 modifier: 林一二
 tags: TidGi-Mobile TidGiMobileFrontPage FrontPage en-GB
 title: TidGi Default Template Plugin Feature Handbook
 
-太记默认自带一些插件，以便开箱即用获得类似 Notion 的功能体验。
+TidGi comes with a few plugins by default to get a Notion-like experience out of the box.
 
 <div style="display:flex;flex-direction:row;justify-content:center">
 <h2>[[Click to Open HandBook|TidGi Default Template Plugin Feature Handbook/Menu]]</h2>

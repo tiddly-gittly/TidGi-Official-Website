@@ -1,10 +1,12 @@
 created: 20240211155830481
 creator: 林一二
-modified: 20240216070733236
+modified: 20240216080428919
 modifier: 林一二
 tags: TidGiMobileFrontPage TidGi-Mobile en-GB
 title: TidGi-Mobile Intro
 
-> All-in-one local-first knowledge base app opensource with Tiddlywiki and plugins
+> All-in-one private knowledge base note & todo app with Tiddlywiki and plugins.
 
-A Note App that is local-first, uses tid/md pure text file, all-in-one with calendar/todo/diary widget, lazy-loading, backlink & outline & Zettelkasten & spaced-repetition, and syncs with the open-source TidGi-Desktop.
+A Note App that is local-first, uses tid/md pure text file, all-in-one with calendar/todo/diary widget, lazy-loading, backlink & outline & Zettelkasten & spaced-repetition.
+
+Keep your privacy offline, or sync with the open-source local-first TidGi-Desktop which won't collect any usage data too. You own your data forever, and you own the App forever. This can be regarded as an open-source alternative to Obsidian (which is commercial and not open-sourced, which you don't really OWN).

@@ -1,13 +1,32 @@
 created: 20230911152944554
 creator: 林一二
-modified: 20240211161533850
+modified: 20240216072654717
 modifier: 林一二
 tags: TidGi-Mobile en-GB TidGiMobileFrontPage
 title: TidGi-Mobile Source and Resources
 
+!! Download
+
+!!! Github Release (Verified by Github)
+
+<div style="display:flex;flex-direction:row;justify-content:center">
+<h2> [[Click to download from Github|https://github.com/tiddly-gittly/TidGi-Mobile/releases/latest/download/app-release-signed.apk]]</h2>
+</div>
+
+!!! Direct download link
+
+Thanks for VerseTensor Inc. for donation of the server.
+
+<div style="display:flex;flex-direction:row;justify-content:center">
+<h2> [ext[Click to download from website server|./files/TidGi-Mobile.apk]]</h2>
+</div>
+
+!!! Store version
+
+Paid versions of TidGi on other platforms. You will get automatic updates when new versions of TidGi come out. After deduction of the Store fee, the money will support TidGi development.
+
+!! Source code
+
+If you have a Github account, please click ⭐️ to help us get more attention.
+
 [[TidGi-Mobile Github OpenSource Repository|https://github.com/tiddly-gittly/TidGi-Mobile]]
-
-Download link:
-
-# [[Github Release (Verified by Github)|https://github.com/tiddly-gittly/TidGi-Mobile/releases/latest/download/app-release-signed.apk]]
-# [ext[Direct Download|./files/TidGi-Mobile.apk]]

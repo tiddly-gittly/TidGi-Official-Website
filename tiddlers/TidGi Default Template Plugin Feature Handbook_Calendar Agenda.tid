@@ -1,6 +1,6 @@
 created: 20240212084702855
 creator: 林一二
-modified: 20240212154154960
+modified: 20240216074839955
 modifier: 林一二
 tags: en-GB [[TidGi Default Template Plugin Feature Handbook]]
 title: TidGi Default Template Plugin Feature Handbook/Calendar Agenda
@@ -16,7 +16,7 @@ Drag on the calendar to add a new Agenda item, and at the top you can make a sho
 Longer item details can also be recorded, and any wiki text can be used, e.g. titles, etc.
 </div>
 <div class="screenshot-item">
-[img[Screenshot-Mobile-CalendarAgenda-zh.jpg]]
+[img[Screenshot-Mobile-CalendarAgenda.jpg]]
 
 "Agenda" is the interface that looks like a "time block".
 

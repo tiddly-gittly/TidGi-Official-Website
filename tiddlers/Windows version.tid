@@ -1,6 +1,6 @@
 created: 20230601115302536
 creator: 马不前
-modified: 20230601143357336
+modified: 20240228110344109
 modifier: 林一二
 tags: Download DownloadLinks
 title: Windows version
@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 @@.installer-download-links-container
 [ext[64-bit auto-install.exe|./files/Install-TidGi-Windows-x64.exe]] (recommended for easy updates)
 
-[ext[64-bit can-choose-directory.msi|./files/Install-TidGi-Windows-x64.msi]] (can pick installation directory, on each update you have to manually re-elected directory which might be forgotten)
+[ext[64-bit can-choose-directory.msi|./files/Install-TidGi-Windows-x64.msi]] (can pick installation directory, on each update you have to manually re-elected directory which might be forgotten, and uninstallation deletes all the files in the folder, so be careful!)
 
 !!! Other installers
 

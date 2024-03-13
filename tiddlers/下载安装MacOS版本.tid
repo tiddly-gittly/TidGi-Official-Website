@@ -1,6 +1,6 @@
 created: 20230601075207351
 creator: 林一二
-modified: 20230601143017682
+modified: 20240313091807042
 modifier: 林一二
 tags: 下载 DownloadLinks
 title: 下载安装MacOS版本
@@ -13,10 +13,10 @@ type: text/vnd.tiddlywiki
 下载的 zip 解压后，记得拖入「应用程序」文件夹后再使用。
 
 <details>
-<summary>Mac 使用者点击这里展开手动信任应用的操作方法 ◀</summary>
-我费劲办法也申请不到苹果开发者账号，所以你得手动信任这个应用
+<summary>Mac 使用者点击这里展开手动信任应用的操作方法，解决「Mac xxx.app 已损坏，无法打开，你应该将它移到废纸篓」等打不开的问题 ◀</summary>
+我费劲办法也申请不到苹果开发者账号，所以你得手动信任这个应用。「xxx.app 已损坏」是苹果公司在撒谎，苹果利用其垄断地位逼迫开发者支付 99 美元，不然就会向用户撒谎应用已损坏，但其实应用是好的。
 
-首先你得把应用拖入「应用程序」文件夹才能使用！不然会弹一个报错框。
+<h2>对于 Intel 芯片用户，首先你得把应用拖入「应用程序」文件夹才能使用！不然会弹一个报错框</h2>
 
 点击「取消」 ↓
 <br/>
@@ -34,17 +34,17 @@ type: text/vnd.tiddlywiki
 
 [img[click-to-ok.png]]
 
-另一种类似的方式去安装:
+<h2>对于 M1 M2 用户，需要用另一种类似的方式去允许安装</h2>
 
-1. 输入命令：sudo spctl --master-disable
+1. 打开「Terminal.app」（终端应用）输入命令：`sudo spctl --master-disable`
 
-2. 设置 -> 安全性 -> 允许从以下位置下载的应用程序 任何来源
+2. 打开系统的 设置 -> 安全性 -> 允许从以下位置下载的应用程序 任何来源
 
 3. 将安装包移动到“应用程序”
 
-4. 输入命令: sudo xattr -d com.apple.quarantine /Applications/TidGi.app
+4. 输入命令: `sudo xattr -d com.apple.quarantine /Applications/TidGi.app` ，按苹果的要求输入电脑的密码
 
-5. 重新点击TidGi.app安装
+5. 重新点击 TidGi.app 打开
 
 </details>
 

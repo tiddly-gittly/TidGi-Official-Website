@@ -1,17 +1,18 @@
 created: 20230718015127147
 creator: 林一二
-modified: 20230920073808156
+modified: 20240425091532984
 modifier: 林一二
 tags: 太记功能手册 AI zh-Hans
 title: 太记功能手册/本地AI助手
 
 本地 AI 配置教程：
 
-# 至少 [[v0.8.1-prerelease6|https://github.com/tiddly-gittly/TidGi-Desktop/releases]] 或更高版本的太记
+# 至少 v0.9.6 或更高版本的太记
 ## 安装并打开太记，打开[[太记设置]]，找到[[语言模型设置]]，点击其中的「打开模型文件夹」按钮，打开放模型的文件夹。
 ## 注意文件夹名是 `language-model`
-# 下载 [[huggingface/vicuna/ggml-vicuna-7b-1.1|https://huggingface.co/vicuna/ggml-vicuna-7b-1.1/tree/main]] 上的 `ggml-vic7b-q5_1.bin` AI 模型文件
-## 将下载的 `ggml-vic7b-q5_1.bin` 模型文件改名为 `llama.bin` （或在[[语言模型设置]]中修改要加载的模型文件名，默认为 `llama.bin`）
+# 下载 [[hf-mirror.com/Qwen|https://hf-mirror.com/Qwen/Qwen1.5-32B-Chat-GGUF/tree/main]] 上的 `qwen1_5-32b-chat-q4_k_m.gguf` AI 模型文件
+## 注意太记只加载 gguf 格式的模型
+## 将下载的 `qwen1_5-32b-chat-q4_k_m.gguf` 模型文件改名为 `llama.bin` （或在[[语言模型设置]]中修改要加载的模型文件名，默认为 `llama.bin`）
 ## 你也可以选择下载更小但更笨的 `ggml-vic7b-q4_0.bin` 模型，或 [[ggml-vicuna-13b-1.1|https://huggingface.co/vicuna/ggml-vicuna-13b-1.1]]上更大更聪明更慢的模型
 ## 也有专家建议下载名字里带 `uncensored` 的模型，因为[[不对齐，反而性能更好|https://www.51cto.com/article/757320.html]]
 # 将 `llama.bin` 放入刚刚你点按钮打开的模型文件夹 `language-model`

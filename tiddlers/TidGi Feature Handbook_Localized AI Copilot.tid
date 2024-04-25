@@ -1,6 +1,6 @@
 created: 20230718160552704
 creator: 林一二
-modified: 20240425091112555
+modified: 20240425092906455
 modifier: 林一二
 tags: [[TidGi Feature Handbook]] AI en-GB
 title: TidGi Feature Handbook/Localized AI Copilot
@@ -10,16 +10,17 @@ Local AI configuration tutorial:
 # At least v0.9.6 or higher version of TidGi.
 ## Install and open TidGi, open [[TidGi Settings]], find [[Language Model Settings]], click the "Open Model Folder" button to open the model folder.
 ## Note that the folder name is `language-model`.
-# Download the `ggml-vic7b-q5_1.bin` AI model File on [[huggingface/vicuna/ggml-vicuna-7b-1.1|https://huggingface.co/vicuna/ggml-vicuna-7b-1.1/tree/main]].
-## Rename the downloaded `ggml-vic7b-q5_1.bin` model file to `llama.bin` (or change the name of the model file to be loaded in [[Language Model Settings]], default is `llama.bin`)
-## You can also choose to download the smaller but dumber `ggml-vic7b-q4_0.bin` model, or the bigger, smarter and slower model on [[ggml-vicuna-13b-1.1|https://huggingface.co/vicuna/ggml-vicuna-13b-1.1]].
+# Download the `qwen1_5-32b-chat-q4_k_m.gguf` AI model File on [[Qwen/Qwen1.5-32B-Chat-GGUF|https://huggingface.co/Qwen/Qwen1.5-32B-Chat-GGUF]].
+## Rename the downloaded `qwen1_5-32b-chat-q4_k_m.gguf` model file to `llama.gguf` (or change the name of the model file to be loaded in [[Language Model Settings]], default is `llama.gguf`)
+## You can also choose to download the smaller but dumber models, or the bigger, smarter and slower model.
 ## Some experts also recommend downloading models with `uncensored` in their names, because [[unaligned, but better performance|https://erichartford.com/uncensored-models]]
-# Put `llama.bin` into the model folder `language-model` that you just opened by clicking the button.
+# Put `llama.gguf` into the model folder `language-model` that you just opened by clicking the button.
 # You're ready to go!
 
 Using the tutorial:
 
 # Make sure you have the ''latest'' `linonetwo/tidgi-language-model` plugin installed.
+## Update plugins with [[CPL|https://tw-cn.netlify.app/]]
 ## There will be a `TG AI` tab in the sidebar.
 ## The new version of TidGi comes with this plugin pre-installed in the new workspace.
 # Open the "TG AI" tab in the sidebar in the Wiki.
@@ -28,3 +29,5 @@ Using the tutorial:
 ## Since the localized AI is currently computed using CPU, it is not as fast as the cloud GPU AI, so you need to be patient for a while.
 ## If your computer's storage is not on a solid state drive, it will take a while to load.
 ## You can see if the AI is running by opening Windows Task Manager to see if the CPU is running at full speed.
+# If something goes wrong, you can tap the x cancel button to abort the output.
+# You can open [[TidGi Settings]], find [[Language Model Settings]], and click "Unload Model" to clear the memory usage. Or you can restart TaiKi directly to clear the memory usage of the language model.

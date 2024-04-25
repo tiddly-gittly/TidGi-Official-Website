@@ -1,6 +1,6 @@
 created: 20230718015127147
 creator: 林一二
-modified: 20240425091532984
+modified: 20240425092846821
 modifier: 林一二
 tags: 太记功能手册 AI zh-Hans
 title: 太记功能手册/本地AI助手
@@ -12,20 +12,23 @@ title: 太记功能手册/本地AI助手
 ## 注意文件夹名是 `language-model`
 # 下载 [[hf-mirror.com/Qwen|https://hf-mirror.com/Qwen/Qwen1.5-32B-Chat-GGUF/tree/main]] 上的 `qwen1_5-32b-chat-q4_k_m.gguf` AI 模型文件
 ## 注意太记只加载 gguf 格式的模型
-## 将下载的 `qwen1_5-32b-chat-q4_k_m.gguf` 模型文件改名为 `llama.bin` （或在[[语言模型设置]]中修改要加载的模型文件名，默认为 `llama.bin`）
-## 你也可以选择下载更小但更笨的 `ggml-vic7b-q4_0.bin` 模型，或 [[ggml-vicuna-13b-1.1|https://huggingface.co/vicuna/ggml-vicuna-13b-1.1]]上更大更聪明更慢的模型
+## 将下载的 `qwen1_5-32b-chat-q4_k_m.gguf` 模型文件改名为 `llama.gguf` （或在[[语言模型设置]]中修改要加载的模型文件名，默认为 `llama.gguf`）
+## 你也可以选择下载更小但更笨的其它模型，或更大更聪明更慢的模型，注意加载会占用大量内存
 ## 也有专家建议下载名字里带 `uncensored` 的模型，因为[[不对齐，反而性能更好|https://www.51cto.com/article/757320.html]]
-# 将 `llama.bin` 放入刚刚你点按钮打开的模型文件夹 `language-model`
+# 将 `llama.gguf` 放入刚刚你点按钮打开的模型文件夹 `language-model`
 # 可以开始使用了！
 
 使用教程：
 
 # 确保你已安装''最新版'' `linonetwo/tidgi-language-model` 太微插件
-## 这样侧边栏会有一个「TG AI」标签页
+## 通过 [[CPL|https://tw-cn.netlify.app/]] 更新插件
+## 这样侧边栏会有一个「太记语言模型」标签页
 ## 新版太记新建的工作区会预置这个插件
-# 在Wiki里打开侧边栏的「TG AI」标签页
+# 在Wiki里打开侧边栏的「太记语言模型」标签页
 # 问 AI 简单的问题，例如 `什么是Tiddlywiki？`
 # 等待 AI 计算结果
 ## 由于本地化 AI 目前是使用 CPU 计算的，速度没有云端 GPU AI 快，需要耐心等待一段时间
 ## 如果你的电脑存储不是使用固态硬盘，还会需要一段时间加载
 ## 可以通过打开Windows任务管理器看看CPU是否在满速运行，来看AI是否在计算中
+# 如果出问题了，可以点 x 取消按钮中止输出
+# 可以在[[太记设置]]，找到[[语言模型设置]]，点击其中的「卸载模型」来解除内存占用。或直接重启太记也可以清空语言模型的内存占用。

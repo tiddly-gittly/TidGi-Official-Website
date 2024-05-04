@@ -1,6 +1,6 @@
 created: 20230601115432707
 creator: 马不前
-modified: 20230601143441002
+modified: 20240313091724406
 modifier: 林一二
 tags: Download DownloadLinks
 title: MacOS version
@@ -14,11 +14,11 @@ After extracting the downloaded zip, remember to drag it into the "Applications"
 
 
 <details>
-<summary>For mac users, you have to manually trust this app, click here to expand details.◀</summary>
+<summary>For mac users, you have to manually trust this app, click here to expand details. To fix "This app is broken, you should move it to trash"◀</summary>
 
-Since I haven't buy Apple developer key yet, so you have to entrust App to open it.
+Since I haven't buy Apple developer key yet, so you have to entrust App to open it. "This app is broken" is a lie, Apple use its monopoly position to force me pay 99$, but I don't want to pay for it, so it lies "This app is broken".
 
-First of all, you need to drag this App into Applications folder! Otherwise there will be an error.
+<h2>For intel user, first of all, you need to drag this App into Applications folder! Otherwise there will be an error.</h2>
 
 Click "Cancel" ↓
 <br/>
@@ -36,6 +36,18 @@ Click "Open" ↓
 Click "OK" ↓
 
 [img[click-to-ok.png]]
+
+<h2>For M1 M2 users, Another way to go about allowing the installation</h2>
+
+1. Open "Terminal.app" and enter the command: `sudo spctl --master-disable`.
+
+2. Open the system Settings -> Security -> Allow applications downloaded from any source in the following location
+
+3. Move the installation package to "Applications". 4.
+
+4. Enter the command: `sudo xattr -d com.apple.quarantine /Applications/TidGi.app` and enter your computer's password as required by Apple.
+
+5. Re-click on TidGi.app to open it.
 
 </details>
 

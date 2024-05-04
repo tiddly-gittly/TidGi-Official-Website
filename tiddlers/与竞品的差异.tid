@@ -1,10 +1,15 @@
 created: 20230601042459250
 creator: 马不前
-modified: 20230601144806016
+modified: 20240504062833048
 modifier: 林一二
 tags: zh-Hans FrontPage
 title: 与竞品的差异
 type: text/vnd.tiddlywiki
+
+''与 Obsidian 的差别''
+
+# Obsidian 是闭源商业化的，类似 Typora 和 印象笔记，为了养团队必然有收费、停服倒闭的一天，你无法掌控软件本身，软件倒闭则无法更新
+# 太微是开源非商业化的，由生活无忧的高级开发人员主导开发，永无收费必要，而且你可以掌控软件本身的源代码，一直有才华横溢的人参与开发，已持续20年
 
 ''与 [[TiddlyDesktop|https://github.com/Jermolene/TiddlyDesktop]] 的差别？''
 

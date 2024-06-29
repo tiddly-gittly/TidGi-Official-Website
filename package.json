@@ -14,7 +14,7 @@
     "html-minifier-terser": "7.1.0",
     "rimraf": "^5.0.1",
     "shx": "0.3.4",
-    "workbox-cli": "6.5.3",
+    "workbox-cli": "7.1.0",
     "zx": "^8.0.0"
   }
 }

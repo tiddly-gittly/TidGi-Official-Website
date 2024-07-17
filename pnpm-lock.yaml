@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@tiddlygit/tiddlywiki':
-    specifier: 5.3.4
-    version: 5.3.4
+    specifier: 5.3.5
+    version: 5.3.5
   bluebird:
     specifier: ^3.7.2
     version: registry.npmmirror.com/bluebird@3.7.2
@@ -26,7 +26,7 @@ devDependencies:
     specifier: 7.1.0
     version: 7.1.0
   rimraf:
-    specifier: ^5.0.7
+    specifier: ^5.0.1
     version: 5.0.7
   shx:
     specifier: 0.3.4
@@ -1628,12 +1628,11 @@ packages:
       defer-to-connect: 1.1.3
     dev: true
 
-  /@tiddlygit/tiddlywiki@5.3.4:
-    resolution: {integrity: sha512-sY2qfanIyM/TiIckBgkFbYN2oZFZZYm4rKzwqhPQa/hnmuuJiyDCeTvvY8I7GAS3ObCJGCq/HDdbOJXzaYuvIw==}
+  /@tiddlygit/tiddlywiki@5.3.5:
+    resolution: {integrity: sha512-P8pqC6DFVLFRSxvGsV9ZCVaQXg5OIm11nAZt0r1bKANYKKpHHqd+MkoQGM2plGB0id2mC0BLYg65bLL9C2El0w==}
     engines: {node: '>=0.8.2'}
     hasBin: true
     dev: false
-    bundledDependencies: []
 
   /@types/estree@0.0.39:
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}

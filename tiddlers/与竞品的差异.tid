@@ -1,6 +1,6 @@
 created: 20230601042459250
 creator: 马不前
-modified: 20240504062833048
+modified: 20240730063620172
 modifier: 林一二
 tags: zh-Hans FrontPage
 title: 与竞品的差异
@@ -8,8 +8,8 @@ type: text/vnd.tiddlywiki
 
 ''与 Obsidian 的差别''
 
-# Obsidian 是闭源商业化的，类似 Typora 和 印象笔记，为了养团队必然有收费、停服倒闭的一天，你无法掌控软件本身，软件倒闭则无法更新
-# 太微是开源非商业化的，由生活无忧的高级开发人员主导开发，永无收费必要，而且你可以掌控软件本身的源代码，一直有才华横溢的人参与开发，已持续20年
+# Obsidian 是闭源商业化的，类似 Typora 和 印象笔记
+# 太微是开源非商业化的，由生活无忧的高级开发人员主导开发，永无收费必要，而且你可以掌控软件本身的源代码，一直有才华横溢的人参与开发，已持续20年。不依赖同步收费商业模式，没有收费、停服倒闭的一天，由于开放源代码且由非商业化组织领导开放，你可以掌控软件本身，开源代码也永久更新。
 
 ''与 [[TiddlyDesktop|https://github.com/Jermolene/TiddlyDesktop]] 的差别？''
 
@@ -17,3 +17,9 @@ type: text/vnd.tiddlywiki
 # 使用 NodeJS wiki 时，我们可以有分离的tiddler文件，这些文件可以手工修改，也可以由其他程序修改（例如装了[[VSCode-TW5-Syntax|https://github.com/joshuafontany/VSCode-TW5-Syntax]]的 VSCode)，而且方便细粒度备份回滚
 # 尽管 TiddlyDesktop 也可以加载由 nodejs 版太微生成的 wiki 文件夹，但太记还可以轻松地将该文件夹自动备份到 Github 上。
 # 通过使用 Electron 技术，我们可以在太微中使用 `fs` 、 `git` 和许多其他 nodejs 的扩展接口，这大大扩展了插件可使用的能力。这种可扩展性也是我选择太微作为我日常知识管理工具的原因，太记进一步强化了它。
+
+''与 Notion 的差别''
+
+# 本地化，笔记保存为易于管理的文本文件，但依然可以使用数据库等高级聚合功能
+# 断网可用，无网情况也秒开，通过本地Wifi与移动端同步
+# 原生支持插件系统，挂件可以和数据库联动

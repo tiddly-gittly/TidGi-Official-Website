@@ -1,6 +1,6 @@
 created: 20230902145429811
 creator: 林一二
-modified: 20230902150117713
+modified: 20240829131444077
 modifier: 林一二
 tags: 太记功能手册
 title: 太记功能手册/开启 HTTP API
@@ -13,7 +13,7 @@ title: 太记功能手册/开启 HTTP API
 
 !! 开启的作用
 
-可以使用[[TW-MobiLe-Sync手机tiddloid移动端同步TidGi桌面端插件|https://tw-cn.netlify.app/#TW-MobiLe-Sync%E6%89%8B%E6%9C%BAtiddloid%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%90%8C%E6%AD%A5TidGi%E6%A1%8C%E9%9D%A2%E7%AB%AF%E6%8F%92%E4%BB%B6]]了，因为它是用HTTP API来同步数据的。
+可以使用[[TW-MobiLe-Sync手机移动端同步TidGi桌面端|太记移动端功能手册/添加想同步的桌面端]]了，因为它是用HTTP API来同步数据的。
 
 可以开博客了，参考[[在手机上运行太微nodejs博客|https://wiki.onetwo.ren/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E8%BF%90%E8%A1%8C%E5%A4%AA%E5%BE%AEnodejs%E5%8D%9A%E5%AE%A2]]，或[[太记功能手册/通过内网穿透开设博客]]。
 

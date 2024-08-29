@@ -1,6 +1,6 @@
 created: 20240211065037787
 creator: 林一二
-modified: 20240211065228888
+modified: 20240829131541486
 modifier: 林一二
 tags: [[TidGi-Mobile Feature Handbook]]
 title: TidGi-Mobile Feature Handbook/Add Desktop to Sync
@@ -18,3 +18,11 @@ title: TidGi-Mobile Feature Handbook/Add Desktop to Sync
   <div class="screenshot-item">Edit server that wiki sync to [img[Screenshot-Edit-Wiki-Server.jpg]]</div>
   <div class="screenshot-item">Import Existing Server [img[Screenshot-Import-Existing-Server.jpg]]</div>
 </div>
+
+!!! Can't connect.
+
+Scanning the code will give you a link.
+
+If you can't open the link on your mobile phone, it means that the network is not working, e.g. not under the same Wifi.
+
+If you can't open the link on your computer, it means that your desktop is not properly configured or has not been rebooted.

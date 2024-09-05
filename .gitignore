@@ -15,8 +15,19 @@ tiddlers/$__layout.tid
 
 files/
 .env
-tiddlers/$__language.tid
-tiddlers/$__palette.tid
-tiddlers/$__language.tid
-tiddlers/$__palette.tid
-tiddlers/$__language.tid
+# for TiddlyWiki
+dist/
+output/
+wiki/**/$__language.tid
+wiki/**/$__StoryList.tid
+wiki/**/$__StoryList_*.tid
+wiki/**/$__palette.tid
+wiki/**/$__layout.tid
+wiki/**/$__keepstate_*
+wiki/**/$__Import.tid
+wiki/**/$__UpgradeLibrary
+wiki/**/$__UpgradeLibrary_List
+wiki/**/$__temp_*
+wiki/**/$__view.tid
+wiki/**/$__config_Navigation_openLinkFromInsideRiver.tid
+wiki/**/$__config_Navigation_openLinkFromOutsideRiver.tid

@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "zx ./scripts/build-wiki.mjs",
-    "download-installers": "rimraf ./files && zx ./scripts/download-installers.mjs",
+    "download-installers": "rimraf -g ./files/* && zx ./scripts/download-installers.mjs",
     "update": "npm-check-updates -u"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "html-minifier-terser": "7.2.0",
+    "node-fetch": "^3.3.2",
     "npm-check-updates": "^17.1.1",
     "rimraf": "^6.0.1",
     "shx": "0.3.4",

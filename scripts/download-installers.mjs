@@ -61,6 +61,11 @@ async function downloadAsset(asset, rename) {
     if (!response.ok) {
       throw new Error(`Failed to fetch ${asset.url}: ${response.statusText}`);
     }
+    // try uncheck "readonly" on folder properties, if encounter "EPERM" error.
+    const fileStream = fs.createWriteStream(destination, { flags: 'wx' });
+    await finished(response.body.pipe(fileStream));
+    console.log(`Done ${fileName}`);
+
     // Verify file size
     const stats = fs.statSync(destination);
     if (stats.size !== asset.size) {

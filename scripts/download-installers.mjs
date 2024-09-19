@@ -113,7 +113,7 @@ await Promise.all([
     );
   }),
   ...latestMobileReleaseData.assets.map(async (asset) => {
-    await Promise.delay(5000 * Math.random());
+    await Promise.delay(10000 * Math.random());
     backOff(async () => {
       console.log(`backoff retry ${asset.name}`);
       await downloadAsset(

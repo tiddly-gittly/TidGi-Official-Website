@@ -1,25 +1,13 @@
 created: 20230911152732657
 creator: 林一二
-modified: 20240216075849724
+modified: 20240919080348946
 modifier: 林一二
 tags: TidGi-Mobile zh-Hans TidGiMobileFrontPage
 title: 太记移动端源码和资源
 
-!! 下载
+!! 太记移动端下载
 
-!!! Github Release（Github 可信验证）（需科学上网）
-
-<div style="display:flex;flex-direction:row;justify-content:center">
-<h2>[[点击从 Github 下载|https://github.com/tiddly-gittly/TidGi-Mobile/releases/latest/download/app-release-signed.apk]]</h2>
-</div>
-
-!!! 直链下载
-
-感谢「位面张量」公司赞助的服务器。
-
-<div style="display:flex;flex-direction:row;justify-content:center">
-<h2>[ext[点击从官网服务器下载|./files/TidGi-Mobile.apk]]</h2>
-</div>
+{{太记移动端直链下载}}
 
 !!! QQ群文件可下载
 

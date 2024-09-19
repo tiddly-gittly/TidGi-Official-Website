@@ -1,11 +1,17 @@
 created: 20240211155830481
 creator: 林一二
-modified: 20240216080428919
+modified: 20240919081051282
 modifier: 林一二
 tags: TidGiMobileFrontPage TidGi-Mobile en-GB
 title: TidGi-Mobile Intro
 
 > All-in-one private knowledge base note & todo app with Tiddlywiki and plugins.
+
+<div align="center">
+
+[[Download|TidGi-Mobile Source and Resources]]
+
+</div>
 
 A Note App that is local-first, uses tid/md pure text file, all-in-one with calendar/todo/diary widget, lazy-loading, backlink & outline & Zettelkasten & spaced-repetition.
 

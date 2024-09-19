@@ -1,11 +1,17 @@
 created: 20240211160048460
 creator: 林一二
-modified: 20240216080505886
+modified: 20240919081015583
 modifier: 林一二
 tags: TidGiMobileFrontPage TidGi-Mobile zh-Hans
 title: 太记移动端介绍
 
 > 多合一本地优先知识库笔记和待办事项应用程序，由太微及其插件驱动
+
+<div align="center">
+
+[[下载|太记移动端源码和资源]]
+
+</div>
 
 一款本地优先、使用 tid/md 纯文本文件、集日历/日程/日记微件、懒加载、反向链接&大纲&卡片笔记&间隔重复等功能于一身。
 

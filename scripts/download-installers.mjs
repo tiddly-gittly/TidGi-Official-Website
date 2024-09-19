@@ -57,7 +57,10 @@ async function downloadAsset(asset, rename) {
     if (error.code !== 'ENOENT') console.log(`File ${fileName}cannot be deleted`, error);
   }
   try {
-    const response = await fetch(asset.url, { headers });
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 300000); // 5 minutes timeout
+
+    const response = await fetch(asset.url, { headers, signal: controller.signal });
     if (!response.ok) {
       throw new Error(`Failed to fetch ${asset.url}: ${response.statusText}`);
     }
@@ -72,9 +75,12 @@ async function downloadAsset(asset, rename) {
       throw new Error(`File size mismatch for ${fileName}: expected ${asset.size}, got ${stats.size}`);
     }
     console.log(`File size verified for ${fileName}`);
-
   } catch (error) {
-    console.log(`Error downloading ${fileName}`, error);
+    if (error.name === 'AbortError') {
+      console.log(`Download timed out for ${fileName}`);
+    } else {
+      console.log(`Error downloading ${fileName}`, error);
+    }
     throw error;
   }
 }
@@ -90,9 +96,14 @@ await Promise.all([
     } else {
       await Promise.delay(5000 * Math.random());
     }
+    let retryCount = 0;
     await backOff(
       async () => {
-        console.log(`backoff retry ${asset.name}`);
+        if (retryCount > 0) {
+          console.log(`backoff retry ${asset.name} (count: ${retryCount})`);
+        } else {
+          console.log(`Start ${asset.name}`);
+        }
         await downloadAsset(asset, (name) => {
           const fileName = name.replace(latestDesktopVersion, 'latest');
           return fileName;

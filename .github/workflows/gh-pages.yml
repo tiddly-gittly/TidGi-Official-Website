@@ -5,6 +5,14 @@ on:
     branches:
       - main
       - master
+      paths-ignore:
+        - 'README.md'
+        - 'files/**'
+        - 'public/**'
+        - 'scripts/**'
+        - '.vscode'
+        - '.idea'
+        - '.gitignore'
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:

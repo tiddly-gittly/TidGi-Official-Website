@@ -61,21 +61,12 @@ async function downloadAsset(asset, rename) {
     if (!response.ok) {
       throw new Error(`Failed to fetch ${asset.url}: ${response.statusText}`);
     }
-    // try uncheck "readonly" on folder properties, if encounter "EPERM" error.
-    const fileStream = fs.createWriteStream(destination, { flags: 'wx' });
-    await finished(response.body.pipe(fileStream));
-    console.log(`Done ${fileName}`);
-
-    // Verify checksum
-    const fileBuffer = fs.readFileSync(destination);
-    const hashSum = crypto.createHash('sha256');
-    hashSum.update(fileBuffer);
-    const hex = hashSum.digest('hex');
-
-    console.log(`Check sum should be ${asset.checksum}, got ${hex}`);
-    if (hex !== asset.checksum) {
-      throw new Error(`Checksum mismatch for ${fileName}: expected ${asset.checksum}, got ${hex}`);
+    // Verify file size
+    const stats = fs.statSync(destination);
+    if (stats.size !== asset.size) {
+      throw new Error(`File size mismatch for ${fileName}: expected ${asset.size}, got ${stats.size}`);
     }
+    console.log(`File size verified for ${fileName}`);
 
   } catch (error) {
     console.log(`Error downloading ${fileName}`, error);

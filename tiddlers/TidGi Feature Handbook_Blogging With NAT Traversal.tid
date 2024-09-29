@@ -1,6 +1,6 @@
 created: 20230902141821730
 creator: 林一二
-modified: 20230902145758243
+modified: 20240929074048646
 modifier: 林一二
 tags: [[TidGi Feature Handbook]]
 title: TidGi Feature Handbook/Blogging With NAT Traversal
@@ -54,3 +54,11 @@ Then you can configure the new workspace with read-only mode and other configura
 If you change the "Right click workspace icon - Configure workspace - Blog and server settings - Knowledge base root tiddler" to `$:/core/save/lazy-all`, you can speed up access by allowing readers to open the page with only the minimum amount of content loaded. However, this feature is not mature enough and may cause some bugs, so it is better to use `$:/core/save/lazy-images` by default.
 
 When you turn on read-only mode, the "Plugins to Ignore" setting appears, which you can use to check the plugins that are only needed for editing modes, such as codemirror, to speed up access by only loading what the reader needs to read when the page is opened.
+
+!! Troubleshooting
+
+!!! Websites can be accessed locally, but no intranet penetration tools other than ngrok intranet penetration work well
+
+The interface sometimes opens, but no entries are loaded.
+
+The user feedback is because vpn is enabled by default, most of the intranet penetration can not connect to the server, while ngrok happens to be able to access both domestic and international.

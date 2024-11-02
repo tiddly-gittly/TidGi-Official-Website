@@ -1,0 +1,22 @@
+created: 20241102054211359
+creator: 林一二
+modified: 20241102060754096
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/Publishing Workspace
+
+Publicly post the main workspace as a blog and hide private content in the sub-workspaces.
+
+!!! Configure the main knowledge base (public workspace)
+
+# Open TidGi app, right click on the workspace icon in the sidebar and select ''Config Workspace''.
+## In the pop-up settings window, there are many configurable items
+## In ''Save and Sync'', you can click the switch in front of ''Local Workspace'' to switch to enable ''Synced Workspace''.
+## Turning on ''Synced Workspace'' will show you ''Git Identity Credentials'', where you can fill in your GitHub account, email address, branch name, etc. to sync your master workspace to the GitHub public repository. However, if you've already filled this out in [[TidGi Feature Handbook/Cloud Backup/Config Github Backup]], you don't need to do it again here.
+# Click the ''Save'' button to complete the configuration.
+
+!!! Creating a Sub-Workspace (Private Workspace)
+
+# The settings for a sub-workspace are basically the same as the main workspace, both can be configured to synchronize to an online Github repository, but you can have it synchronize to a private Github repository
+# Set it to be private on Github, or create it as a private repository when you create the repository. This is set up on Github, not on Taichi.
+# so that no one can see the private notes you've synced to this repository.

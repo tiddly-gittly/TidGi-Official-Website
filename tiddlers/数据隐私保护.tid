@@ -6,8 +6,20 @@ tags: zh-Hans FrontPage
 title: 数据隐私保护
 type: text/vnd.tiddlywiki
 
-你可以选择你的 WIKI 工作区的存储服务提供商：
+!! 隐私：如何存储和使用数据
 
-# 「Github」是一个无限存储空间、可以用 GH-Pages 部署博客的平台。
-# 「本地」模式会创建一个本地仓库来备份你的 WIKI，你可以用 [[GithubDesktop|https://github.com/desktop/desktop]]来手动同步内容到云端。
-# 「Gitlab」和「码云」还待支持，不过架子已经搭好了。
+我们不会从您的手机向互联网发送任何信息。
+
+您可以选择将手机中的数据同步到本地 WiFi 上的本地 TidGi-Desktop 应用程序。
+
+!!! 它如何在手机上本地存储数据
+
+这是一款本地优先的应用程序，它以以下格式存储数据，并且永远不会离开本地 WiFi 网络：
+
+# HTML，包含一些核心内容，如 `$:/boot` 和由 [$:/tags/RawMarkup](https://tiddlywiki.com/#SystemTag%3A%20%24%3A%2Ftags%2FRawMarkup) 创建的原始 HTML。
+## 要更新 TiddlyWiki 版本或原始标记，需要执行完全同步（删除并重新创建）
+# SQLite，添加维基时，我们会获取你的tid/md文件中的所有skinny-tiddlers，然后将它们存储在SQLite数据库中，以加快启动速度并节省内存。
+# JSON, 添加维基时，我们会以 JSON 格式获取所有插件的完整内容，这些内容将不会更新。
+# 文件，二进制文件（如图片）以文件形式存储在手机中。
+
+之后，我们会使用同步适配器（Sync-Adaptor）来懒散地只加载所需的文件，以提高庞大维基的性能。同时，减少手机内存和 CPU 的消耗。

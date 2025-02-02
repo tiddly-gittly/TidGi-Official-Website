@@ -1,0 +1,40 @@
+created: 20241102060818576
+creator: 林一二
+modified: 20241102061122191
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/Create Workspace
+
+A brief tutorial on creating public and private workspaces (knowledge bases) in Taiji:
+
+! To create a main knowledge base (as a public knowledge base)
+
+# Open the New Workspace popup box by clicking on the plus + button on the TaiKeeper sidebar
+# The ''Create New WIKI'' tab will be checked by default.
+# In the ''Parent folder of workspace's folder'', select the path where you wish to store the knowledge base. The default is Desktop, meaning we will create a folder for your notes and this new folder will be placed on the desktop.
+# Set the Knowledge Base folder name, e.g. Wiki.
+# Ensure that the ''Main Workspace'' option is turned on, this option ensures that your folder can be opened by TaiMarks and will create a configuration file of TaiMarks for you, which can later be used for public distribution if needed.
+# Click on the ''Create WIKI'' button to create a main knowledge base at the specified path.
+
+! Creating a Sub-Workspace (Private Knowledge Base)
+
+# Turn on the ''Sub-Workspace'' option when creating a new knowledge base. Sub-knowledge bases must be dependent on a main knowledge base and can be used to store private content.
+# Set the knowledge base folder name and save path.
+# Specify the location of the main workspace, this is a drop down list of items that need to have been created for the main workspace to be optional. Select a main knowledge base to depend on.
+# After creation, the system will automatically create a soft link (shortcut) to the main knowledge base for the sub knowledge base so that the main knowledge base can reference the content in the sub knowledge base. Notes in both knowledge bases will be visible in the main knowledge base at the same time and can reference each other.
+# Fill in tags, e.g. ''Private'', and each time you create an entry with a specific tag (e.g. ''Private''), the system will automatically save the content to the appropriate sub-workspace directory according to the rules.
+# Click ''Create WIKI'' button, the sub-workspace will be linked to the main workspace while created in the specified location.
+
+With the above steps, you can easily create public and private workspaces in TaiKnowledge for independent management and sharing of different contents.
+
+!!! Principle of Sub-Workspace
+
+TidGi underpinnings work by automatically creating [ext[`$:/config/FileSystemPaths` entries|https://tiddlywiki.com/#Customising%20Tiddler%20File%20Naming]] to defining content storage paths for specific tags.
+
+You can find this file in the main knowledgebase, which is something along the lines of
+
+```tid
+[in-tagtree-of[private]]:and[search-replace:g[/],[_]search-replace:g[:],[_]addprefix[/]addprefix[private-wiki]addprefix[/]addprefix[ subwiki]]
+```
+
+It is created automatically, so the average user does not need to understand it.

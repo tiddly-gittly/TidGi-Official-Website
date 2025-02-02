@@ -1,0 +1,20 @@
+created: 20250202040824437
+creator: 林一二
+modified: 20250202040918666
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/Use deep links to open workspaces and tiddlers
+
+Support the use of Wiki names and Chinese Tiddler titles.
+
+For example
+
+* `tidgi://lxqsftvfppu_z4zbaadc0/#:Index` (using the workspace ID)
+* `tidgi://wiki/#New Tiddler` (using the English workspace name. When the names are the same, the sidebar will be used for top-to-bottom sorting)
+* `tidgi://w/中文/#New Tiddler` (using the Chinese workspace name. The `/w/` prefix is required)
+
+Usage methods
+
+* It can be placed in the Wiki in an external link like `[ext[tidgi://wiki/#Index]]` and clicked to open another workspace
+* It can be placed in the browser bookmarks and triggered to open through the browser
+* It can be placed in other applications and clicked to open 

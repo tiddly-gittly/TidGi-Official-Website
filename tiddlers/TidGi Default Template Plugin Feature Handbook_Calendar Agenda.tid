@@ -1,8 +1,8 @@
 created: 20240212084702855
 creator: 林一二
-modified: 20240216074839955
+modified: 20250424061714167
 modifier: 林一二
-tags: en-GB [[TidGi Default Template Plugin Feature Handbook]]
+tags: [[TidGi Default Template Plugin Feature Handbook]]
 title: TidGi Default Template Plugin Feature Handbook/Calendar Agenda
 
 Click the {{$:/plugins/linonetwo/tw-calendar/tiddlywiki-ui/Images/GoToCalendarImage}} button on Page Control can open the Agenda layout of Calendar plugin.

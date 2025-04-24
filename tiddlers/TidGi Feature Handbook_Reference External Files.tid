@@ -1,8 +1,8 @@
 created: 20240123045322023
 creator: 林一二
-modified: 20240123050252175
+modified: 20250424061801446
 modifier: 林一二
-tags: [[TidGi Feature Handbook]] en-GB
+tags: [[TidGi Feature Handbook]]
 title: TidGi Feature Handbook/Reference External Files
 
 TidGi supports wiki link and `_canonical_uri` to use `file://` prefix (or `open://`, both works the same).

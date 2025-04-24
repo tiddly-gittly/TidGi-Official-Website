@@ -1,8 +1,8 @@
 created: 20240123044030494
 creator: 林一二
-modified: 20240123050229274
+modified: 20250424061733201
 modifier: 林一二
-tags: 太记功能手册 zh-Hans
+tags: 太记功能手册
 title: 太记功能手册/引用外部文件
 
 太记支持维基链接和`_canonical_uri`使用`file://`前缀（或`open://`，两者效果相同）。

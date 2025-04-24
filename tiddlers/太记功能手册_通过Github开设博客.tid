@@ -1,0 +1,14 @@
+created: 20250424052342598
+creator: 林一二
+modified: 20250424053012257
+modifier: 林一二
+tags: 太记功能手册
+title: 太记功能手册/通过Github开设博客
+
+太记创建的工作区，要部署为 Github Pages 单页面版博客，只需要修改 Github 部署设置：
+
+把 Deploy From Branch 改为 Deploy from action，别的都不用设置。
+
+[img[通过Github开设博客-Github部署设置截屏.png]]
+
+设置好后，可能需要再次推送一次 Git 变更以触发 Github Actions 运行，来部署博客。

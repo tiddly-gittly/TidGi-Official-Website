@@ -1,0 +1,19 @@
+created: 20250424054426764
+creator: 林一二
+modified: 20250424055500720
+modifier: 林一二
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/Create Workspace/Import single file HTML Wiki
+
+! Create the main knowledge base (as a public knowledge base)
+
+# Click the plus (+) button on the sidebar of TidGi to open the New Workspace dialog box.
+# Select the 'Import WIKI.HTML' tab.
+
+[img[屏幕截图-从HTML单文件版Wiki导入.png]]
+
+# Fill in the path of the HTML TiddlyWiki file you want to import. You can click the 'Select' button on the right to open the file selection dialog.
+# In the 'Parent folder of the workspace folder', choose the path where you want to store the knowledge base. The default is the desktop, which means a new folder will be created on the desktop to store your notes.
+# In the 'Name of the converted Wiki folder', enter the name of the knowledge base folder, such as 'Wiki'. Your knowledge base will be stored in this folder.
+# Make sure the 'Main knowledge base' option is enabled. This option ensures that your folder can be opened by TidGi and creates the configuration files for TiddlyWiki, which can be used for public release later if needed.
+# Click the 'Create WIKI' button to create a main knowledge base at the specified path.

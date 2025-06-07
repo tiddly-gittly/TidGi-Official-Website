@@ -1,11 +1,43 @@
 created: 20240123044030494
 creator: 林一二
-modified: 20250424061733201
+modified: 20250607121129076
 modifier: 林一二
+page-cover: 书架上的书(books_on_bookshelf)_.jpg
 tags: 太记功能手册
 title: 太记功能手册/引用外部文件
 
-太记支持维基链接和`_canonical_uri`使用`file://`前缀（或`open://`，两者效果相同）。
+太记支持维基链接和`_canonical_uri`使用 `file://` 前缀（或 `open://`，两者效果相同）。
+
+!! 维基文件夹内的文件（使用相对路径）
+
+如果您安装了[[太记外部附件插件|https://tw-cpl.netlify.app/#Plugin_202305190710119:Index%20Plugin_202305190710119]]，当您图片等文件拖入知识库时，该插件创建的条目将带有 `_canonical_uri` 字段，表示引用外部附件，例如：
+
+```tid
+_canonical_uri: files/%E4%B9%A6%E6%9E%B6%E4%B8%8A%E7%9A%84%E4%B9%A6books_on_bookshelf.jpg
+```
+
+其中中文字符会被转码以防止字符问题，还有注意不要有_ () 等特殊符号。
+
+在 `_canonical_uri` 里可以不需要带上 `file://`前缀。
+
+!!! 例如使用系统自带图像查看器打开图片文件
+
+> `[[打开图片的链接|file://tiddlers/TiddlyWikiIconBlack.png]]`
+> `[[打开图片的链接|file://./tiddlers/TiddlyWikiIconBlack.png]]`
+> `[[打开图片的链接|file://files/%E4%B9%A6%E6%9E%B6%E4%B8%8A%E7%9A%84%E4%B9%A6books_on_bookshelf.jpg]]`
+> `[[打开图片的链接|file://./files/%E4%B9%A6%E6%9E%B6%E4%B8%8A%E7%9A%84%E4%B9%A6books_on_bookshelf.jpg]]`
+
+`file://./` 是 `file://` 开头，加上 `./` 当前文件夹的意思，所以和 `file://` 效果一样。
+
+在链接里需要带上 `file://` 前缀，以便太记识别区分这是一个外部图片，而不是一个笔记条命名。
+
+!!! 使用系统文件浏览器打开文件夹
+
+> `[[file://./files/]]`
+
+!!! `files/` 文件夹中的文件也可以像下面这样导入
+
+> `[ext[files文件夹中的文件|file://./files/filename.pdf]]`"。
 
 !! 维基 tiddlers 文件夹之外的文件（使用绝对路径的计算机上的任何位置）
 
@@ -17,32 +49,20 @@ title: 太记功能手册/引用外部文件
 
 这里的 `file:///` 是 `file://` 开头，加上 `/` 系统根文件夹的意思，不是 `///` 的意思。
 
-!! 维基文件夹内的文件（使用相对路径）
-
-!!! 例如使用系统自带图像查看器打开图片文件
-
-> `[[打开图片的链接|file://tiddlers/TiddlyWikiIconBlack.png]]`
-> `[[打开图片的链接|file://./tiddlers/TiddlyWikiIconBlack.png]]`
-
-`file://./` 是 `file://` 开头，加上 `./` 当前文件夹的意思，所以和 `file://` 效果一样。
-
-!!! 使用系统文件浏览器打开文件夹
-
-> `[[file://./files/]]`
-
-!!! `files/` 文件夹中的文件也可以像下面这样导入
-
-> `[ext[files文件夹中的文件|file://./files/filename.pdf]]`"。
-
-因此，如果您安装了[[太记外部附件插件|https://tw-cpl.netlify.app/#Plugin_202305190710119:Index%20Plugin_202305190710119]]，当您将文件拖入维基时，该插件创建的`_canonical_uri`也将以`file://`为前缀。
-
 !! 更多可用的例子
-
 
 ```js
 [img[file:///var/folders/t3/0jyr287x3rd2m0b6ml8w4f2c0000gn/T/tidgi-dev/wiki/files/截屏2023-06-21 12.40.20.png]]
 
 [[file:///var/folders/t3/0jyr287x3rd2m0b6ml8w4f2c0000gn/T/tidgi-dev/wiki/files/截屏2023-06-21 12.40.20.png]]
+
+[img[file://files/%E4%B9%A6%E6%9E%B6%E4%B8%8A%E7%9A%84%E4%B9%A6books_on_bookshelf.jpg]]
+
+[img[file://./files/%E4%B9%A6%E6%9E%B6%E4%B8%8A%E7%9A%84%E4%B9%A6books_on_bookshelf.jpg]]
+
+[img[files/%E4%B9%A6%E6%9E%B6%E4%B8%8A%E7%9A%84%E4%B9%A6books_on_bookshelf.jpg]]
+
+[img[./files/%E4%B9%A6%E6%9E%B6%E4%B8%8A%E7%9A%84%E4%B9%A6books_on_bookshelf.jpg]]
 
 [[file:///var/folders/t3/0jyr287x3rd2m0b6ml8w4f2c0000gn/T/tidgi-dev/wiki/files/]]
 

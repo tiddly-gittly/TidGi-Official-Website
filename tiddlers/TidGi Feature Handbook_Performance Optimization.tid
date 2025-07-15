@@ -1,0 +1,44 @@
+created: 20250715045721507
+creator: Linonetwo
+modified: 20250715051729131
+modifier: Linonetwo
+tags: [[TidGi Feature Handbook]]
+title: TidGi Feature Handbook/Performance Optimization
+
+A newly created TidGi workspace should start instantly, but as the number of tiddlers increases, you may find startup becomes slower. You can speed it up with the following methods.
+
+!! Store large files as attachments
+
+Use the [[TidGi Feature Handbook/Reference External Files]] feature to import all images. Reading and sending images from the file system to the page consumes a lot of computation and bandwidth.
+
+If images are not stored as attachments, they will be read into memory at startup, consuming more memory.
+
+!! Reduce filters on the first screen
+
+Tiddlywiki filters are essentially encapsulated computation code. The more filters you use, the more calculations need to run. Especially filters like "backlinks" under tiddlers, "recent" tab in the sidebar using date filters, and expressions for counting total words in the wiki.
+
+Filters may slow down startup, but that doesn't mean you shouldn't use them—you just shouldn't display them on the first screen.
+
+* For example, set the sidebar tab to a static page without filters.
+* Put statistics content in tiddlers that are not loaded on the first screen, or even [[make it a separate layout|https://tw-cn.netlify.app/#%E5%B8%B8%E7%94%A8%E5%B8%83%E5%B1%80%E4%BB%8B%E7%BB%8D]].
+
+!! Enable lazy loading
+
+"Lazy" means TidGi won't rush to load note content; it only loads when you view it.
+
+Steps to enable:
+
+# Right-click the workspace icon to open the menu
+# Select "Configure Workspace"
+# Expand the "Blog and Server Settings" section
+# Find and expand "Wiki Root Tiddler"
+# Select `$:/core/save/lazy-all`
+
+* `$:/core/save/lazy-all` means "load text and images on demand". Only the first screen tiddlers and plugin tiddlers are loaded at startup, so it's very fast.
+** Note: Due to a current limitation in TiddlyWiki core, loading text on demand will cause backlinks to not work, because other texts are not loaded and links cannot be detected.
+* `$:/core/save/lazy-images` is the default option, meaning "load images on demand".
+** If you haven't stored large files as attachments, this can slightly reduce image-related delays.
+** However, this does not prevent TidGi from reading images into memory for backup. To completely avoid loading images into memory, you still need to "store large files as attachments".
+* `$:/core/save/all` means loading all content at once, which is generally not needed.
+** After full loading, you can export a complete HTML file.
+** Of course, to export all images into HTML, the images must not be stored as attachments. Otherwise, even with this option, images won't be loaded into memory and won't be included in the exported HTML file.

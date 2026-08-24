@@ -1,7 +1,7 @@
 import path from 'path';
 import { spawn } from 'child_process';
 import { fileURLToPath } from 'url';
-import { mkdir, readFile, rename as moveFile, rm, stat, writeFile } from 'fs/promises';
+import { mkdir, readdir, readFile, rename as moveFile, rm, stat, writeFile } from 'fs/promises';
 import { backOff } from 'exponential-backoff';
 import 'dotenv/config';
 
@@ -134,19 +134,52 @@ async function writeManifest(desktopTag, mobileTag, files) {
   );
 }
 
-async function verifyAllAssets(assets, getFileName) {
-  for (const asset of assets) {
-    const fileName = getFileName(asset.name);
-    const destination = path.join(downloadFolder, fileName);
-    if (!(await hasExpectedSize(destination, asset.size))) {
+function buildAssetPlan(assets, getFileName) {
+  return assets.map((asset) => ({
+    sourceName: asset.name,
+    fileName: getFileName(asset.name),
+    size: asset.size,
+    url: asset.browser_download_url,
+  }));
+}
+
+async function verifyAssetPlan(plan) {
+  for (const item of plan) {
+    const destination = path.join(downloadFolder, item.fileName);
+    if (!(await hasExpectedSize(destination, item.size))) {
       return false;
     }
   }
   return true;
 }
 
-function renameMobileAsset(name) {
-  return name.replace('app-release-signed', 'TidGi-Mobile');
+async function removeOrphanFiles(expectedFileNames) {
+  let entries;
+  try {
+    entries = await readdir(downloadFolder);
+  } catch {
+    return 0;
+  }
+
+  let removed = 0;
+  for (const entry of entries) {
+    if (entry === '.release-manifest.json') {
+      continue;
+    }
+    if (expectedFileNames.has(entry)) {
+      continue;
+    }
+    if (entry.endsWith('.download')) {
+      const baseName = entry.slice(0, -'.download'.length);
+      if (expectedFileNames.has(baseName)) {
+        continue;
+      }
+    }
+    await rm(path.join(downloadFolder, entry), { force: true });
+    console.log(`Removed orphan file: ${entry}`);
+    removed += 1;
+  }
+  return removed;
 }
 
 const latestDesktopReleaseData = await fetchJson('https://api.github.com/repos/tiddly-gittly/TidGi-Desktop/releases/latest');
@@ -166,6 +199,15 @@ function renameDesktopAsset(name) {
   return fileName.replace(/^tidgi-latest-/, 'TidGi-latest-');
 }
 
+function renameMobileAsset(name) {
+  return name.replace('app-release-signed', 'TidGi-Mobile');
+}
+
+const desktopPlan = buildAssetPlan(latestDesktopReleaseData.assets, renameDesktopAsset);
+const mobilePlan = buildAssetPlan(latestMobileReleaseData.assets, renameMobileAsset);
+const allPlan = [...desktopPlan, ...mobilePlan];
+const expectedFileNames = new Set(allPlan.map((item) => item.fileName));
+
 console.log(`Desktop release: ${desktopTag}`);
 console.log(`Mobile release: ${mobileTag}`);
 console.log(`Download proxy: ${useProxy ? proxyUrl : 'direct'}`);
@@ -173,91 +215,102 @@ console.log(`Clean download folder: ${cleanDownloadFolder}`);
 
 await mkdir(downloadFolder, { recursive: true });
 
-const manifest = await readManifest();
-const desktopComplete = await verifyAllAssets(latestDesktopReleaseData.assets, renameDesktopAsset);
-const mobileComplete = await verifyAllAssets(latestMobileReleaseData.assets, renameMobileAsset);
-
-if (
-  manifest?.desktopTag === desktopTag
-  && manifest?.mobileTag === mobileTag
-  && desktopComplete
-  && mobileComplete
-) {
-  console.log('All installers already synced for current releases; skipping download.');
-  process.exit(0);
-}
-
-const versionChanged = manifest && (manifest.desktopTag !== desktopTag || manifest.mobileTag !== mobileTag);
-if (cleanDownloadFolder || versionChanged) {
-  const reason = cleanDownloadFolder ? 'DOWNLOAD_CLEAN requested' : 'release version changed';
-  console.log(`${reason}; clearing download folder before sync`);
+if (cleanDownloadFolder) {
+  console.log('DOWNLOAD_CLEAN requested; clearing download folder');
   await rm(downloadFolder, { recursive: true, force: true });
   await mkdir(downloadFolder, { recursive: true });
 }
 
-async function downloadAsset(asset, getFileName) {
-  const fileName = getFileName(asset.name);
+const manifest = await readManifest();
+const desktopComplete = await verifyAssetPlan(desktopPlan);
+const mobileComplete = await verifyAssetPlan(mobilePlan);
+
+if (desktopComplete && mobileComplete) {
+  if (manifest?.desktopTag !== desktopTag || manifest?.mobileTag !== mobileTag) {
+    await writeManifest(
+      desktopTag,
+      mobileTag,
+      allPlan.map(({ fileName, size }) => ({ name: fileName, size })),
+    );
+  }
+  console.log('All installers already present with verified sizes; skipping download.');
+  process.exit(0);
+}
+
+const orphansRemoved = await removeOrphanFiles(expectedFileNames);
+if (orphansRemoved > 0) {
+  console.log(`Removed ${orphansRemoved} orphan file(s) not in current release asset list`);
+}
+
+async function downloadPlannedAsset(item) {
+  const { fileName, size, url, sourceName } = item;
   const headers = getGithubHeaders('application/octet-stream');
   const destination = path.join(downloadFolder, fileName);
   const temporaryDestination = `${destination}.download`;
-  if (await hasExpectedSize(destination, asset.size)) {
-    console.log(`Skip ${fileName}; existing file size is already verified`);
-    return;
+
+  if (await hasExpectedSize(destination, size)) {
+    console.log(`Skip ${fileName}; size already verified (${size} bytes)`);
+    return 'skipped';
   }
-  if (await hasExpectedSize(temporaryDestination, asset.size)) {
+
+  if (await hasExpectedSize(temporaryDestination, size)) {
     await rm(destination, { force: true });
     await moveFile(temporaryDestination, destination);
-    console.log(`Done ${fileName}`);
-    console.log(`File size verified for ${fileName}`);
-    return;
+    console.log(`Recovered ${fileName} from completed partial download`);
+    return 'downloaded';
   }
-  console.log(`Downloading ${fileName} from ${asset.browser_download_url}`);
+
+  console.log(`Downloading ${fileName} from ${url}`);
   try {
-    await downloadFile(asset.browser_download_url, headers, temporaryDestination);
+    await downloadFile(url, headers, temporaryDestination);
     const stats = await stat(temporaryDestination);
-    if (stats.size !== asset.size) {
+    if (stats.size !== size) {
       await rm(temporaryDestination, { force: true });
-      throw new Error(`File size mismatch for ${fileName}: expected ${asset.size}, got ${stats.size}`);
+      throw new Error(`File size mismatch for ${fileName}: expected ${size}, got ${stats.size}`);
     }
     await rm(destination, { force: true });
     await moveFile(temporaryDestination, destination);
-    console.log(`Done ${fileName}`);
-    console.log(`File size verified for ${fileName}`);
+    console.log(`Done ${fileName} (${size} bytes)`);
+    return 'downloaded';
   } catch (error) {
     try {
       const stats = await stat(temporaryDestination);
-      console.log(`Kept partial download for ${fileName}: ${stats.size}/${asset.size} bytes`);
+      console.log(`Kept partial download for ${fileName}: ${stats.size}/${size} bytes`);
     } catch {}
-    console.log(`Error downloading ${fileName}`, error);
+    console.log(`Error downloading ${sourceName} -> ${fileName}`, error);
     throw error;
   }
 }
 
-async function downloadAssetWithBackoff(asset, getFileName) {
+async function downloadPlannedAssetWithBackoff(item) {
   let retryCount = 0;
-  await backOff(
+  return await backOff(
     async () => {
       if (retryCount > 0) {
-        console.log(`backoff retry ${asset.name} (count: ${retryCount})`);
-      } else {
-        console.log(`Start ${asset.name}`);
+        console.log(`Retry ${item.sourceName} (attempt ${retryCount + 1})`);
       }
       retryCount += 1;
-      await downloadAsset(asset, getFileName);
+      return await downloadPlannedAsset(item);
     },
     { numOfAttempts: 20, jitter: 'full' },
   );
 }
 
-const syncedFiles = [];
-for (const asset of latestDesktopReleaseData.assets) {
-  await downloadAssetWithBackoff(asset, renameDesktopAsset);
-  syncedFiles.push({ name: renameDesktopAsset(asset.name), size: asset.size });
-}
-for (const asset of latestMobileReleaseData.assets) {
-  await downloadAssetWithBackoff(asset, renameMobileAsset);
-  syncedFiles.push({ name: renameMobileAsset(asset.name), size: asset.size });
+let downloaded = 0;
+let skipped = 0;
+
+for (const item of allPlan) {
+  const result = await downloadPlannedAssetWithBackoff(item);
+  if (result === 'skipped') {
+    skipped += 1;
+  } else {
+    downloaded += 1;
+  }
 }
 
-await writeManifest(desktopTag, mobileTag, syncedFiles);
-console.log(`Sync complete for ${desktopTag} / ${mobileTag}`);
+await writeManifest(
+  desktopTag,
+  mobileTag,
+  allPlan.map(({ fileName, size }) => ({ name: fileName, size })),
+);
+console.log(`Sync complete for ${desktopTag} / ${mobileTag}: ${downloaded} downloaded, ${skipped} skipped`);

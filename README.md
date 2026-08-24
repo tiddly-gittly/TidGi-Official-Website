@@ -15,4 +15,4 @@ Use [scripts/download-installers.mjs](scripts/download-installers.mjs) to downlo
 
 Binary files in `files/downloaders` should be gitignored, because files are large and updated frequently. When setup website on a server, please use things like `pm2` to run the download-installers script periodically.
 
-The downloader uses `socks5h://127.0.0.1:1080` by default. Override it with `DOWNLOAD_PROXY`, or set `DOWNLOAD_PROXY=direct` to disable proxy usage. It cleans `files/downloaders` by default; set `DOWNLOAD_CLEAN=false` to resume partial `.download` files.
+The downloader uses `socks5h://127.0.0.1:1080` by default. Override it with `DOWNLOAD_PROXY`, or set `DOWNLOAD_PROXY=direct` to disable proxy usage. By default it keeps existing files and only downloads missing or size-mismatched assets; set `DOWNLOAD_CLEAN=true` to wipe the folder before syncing (mainly for local rebuilds).

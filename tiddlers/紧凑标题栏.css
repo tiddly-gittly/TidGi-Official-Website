@@ -1,7 +1,8 @@
 /*
  * The Shiraz toolbar style hides title-bar content with opacity but leaves its
- * full layout height behind. Keep a small interaction area on touch devices
- * and expand to the title bar's natural height only for mouse-capable screens.
+ * full layout height behind. Keep a small interaction area while hidden, then
+ * expand to the title bar's natural height whenever its existing hover rule
+ * makes the controls visible. Touch browsers map a long press to :hover.
  */
 .tc-tiddler-frame .tc-titlebar {
   max-block-size: 2rem;
@@ -9,8 +10,6 @@
   transition: max-block-size 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .tc-tiddler-frame .tc-titlebar:hover {
-    max-block-size: 100vh;
-  }
+.tc-tiddler-frame .tc-titlebar:hover {
+  max-block-size: 100vh;
 }
